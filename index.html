@@ -426,4 +426,38 @@
 
       const html = document.documentElement;
       const textNodes = document.querySelectorAll("[data-i18n]");
-      const htmlNodes = document.querySelec
+      const htmlNodes = document.querySelectorAll("[data-i18n-html]");
+      const languageSelect = document.getElementById("language-select");
+
+      function setLanguage(language) {
+        const dictionary = translations[language] || translations.en;
+
+        html.lang = language;
+
+        textNodes.forEach((node) => {
+          const key = node.getAttribute("data-i18n");
+          if (dictionary[key]) {
+            node.textContent = dictionary[key];
+          }
+        });
+
+        htmlNodes.forEach((node) => {
+          const key = node.getAttribute("data-i18n-html");
+          if (dictionary[key]) {
+            node.innerHTML = dictionary[key];
+          }
+        });
+
+        localStorage.setItem("selectedLanguage", language);
+      }
+
+      languageSelect.addEventListener("change", (event) => {
+        setLanguage(event.target.value);
+      });
+
+      const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+      languageSelect.value = savedLanguage;
+      setLanguage(savedLanguage);
+    </script>
+  </body>
+</html>
