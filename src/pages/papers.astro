@@ -1,0 +1,73 @@
+---
+import Base from "../layouts/Base.astro";
+
+// Authors are trusted HTML written here; <strong> marks Michele.
+const papers = [
+  {
+    title:
+      "Assessing the quality and performance of synthetic data augmentation to identify stigmatizing language in obstetric clinical notes",
+    href: "https://doi.org/10.1016/j.outlook.2026.102757",
+    venue: "Nursing Outlook",
+    year: 2026,
+    authors:
+      "Jihye Kim Scroggins, Veronica Barcelona, Ismael I. Hulchafo, Sarah E. Harkins, Zhihong Zhang, Danielle Scharp, Kenrick Cato, Hans Moen, <strong>Michele Tadiello</strong>, Maxim Topaz",
+  },
+  {
+    title: "Stigmatizing and positive language in birth clinical notes associated with race and ethnicity",
+    href: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2833892",
+    venue: "JAMA Network Open",
+    year: 2025,
+    authors:
+      "Ismael Ibrahim Hulchafo, Jihye Kim Scroggins, Sarah E. Harkins, Hans Moen, <strong>Michele Tadiello</strong>, Kenrick Cato, Anahita Davoudi, Dena Goffman, Janice James Aubey, Coretta Green, Maxim Topaz, Veronica Barcelona",
+  },
+  {
+    title:
+      "Identifying stigmatizing and positive/preferred language in obstetric clinical notes using natural language processing",
+    href: "https://academic.oup.com/jamia/article-abstract/32/2/308/7906099",
+    venue: "Journal of the American Medical Informatics Association",
+    year: 2025,
+    authors:
+      "Jihye Kim Scroggins, Ismael I. Hulchafo, Sarah Harkins, Danielle Scharp, Hans Moen, Anahita Davoudi, Kenrick Cato, <strong>Michele Tadiello</strong>, Maxim Topaz, Veronica Barcelona",
+  },
+  {
+    title:
+      "Toward equitable documentation: Evaluating ChatGPT's role in identifying and rephrasing stigmatizing language in electronic health records",
+    href: "https://doi.org/10.1016/j.outlook.2025.102472",
+    venue: "Nursing Outlook",
+    year: 2025,
+    authors:
+      "Zhihong Zhang, Jihye Kim Scroggins, Sarah Harkins, Ismael Ibrahim Hulchafo, Hans Moen, <strong>Michele Tadiello</strong>, Veronica Barcelona, Maxim Topaz",
+  },
+  {
+    title:
+      "Expanding the OMOP Common Data Model in accord with federal rules for hospital price transparency and transparency in coverage",
+    href: "https://www.ohdsi.org/wp-content/uploads/2023/10/altosaar-jaan_payless-health-common-data-model_2023symposium-Jaan-Altosaar-Li.pdf",
+    venue: "OHDSI Global Symposium",
+    year: 2023,
+    authors: "Jacob S. Zelko, Jaan Altosaar Li, <strong>Michele Tadiello</strong>",
+  },
+];
+---
+
+<Base title="Publications">
+  <h1 data-i18n="publicationsTitle">Publications</h1>
+  <ul class="entries">
+    {
+      papers.map(({ title, href, venue, year, authors }) => (
+        <li>
+          <h2>
+            <a href={href}>{title}</a>
+          </h2>
+          <p>
+            <Fragment set:html={authors} />. <cite>{venue}</cite>, {year}.
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="aside">
+    <a href="https://scholar.google.com/citations?hl=it&user=yyzWSssAAAAJ" data-i18n="scholarLink">
+      View all publications on Google Scholar
+    </a>
+  </p>
+</Base>

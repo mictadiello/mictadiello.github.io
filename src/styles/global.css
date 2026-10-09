@@ -1,0 +1,243 @@
+:root {
+  --bg: #000;
+  --text: #e2e2e2;
+  --muted: #9a9a96;
+  --line: #3d3d3d;
+  --field: #292929;
+  --accent: #24cb71;
+  --font-display: "Inter Variable", system-ui, sans-serif;
+  --font-body: "Source Serif 4 Variable", Georgia, serif;
+  --edge: clamp(1.25rem, 5vw, 3rem);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--font-body);
+  font-weight: 440;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: var(--edge);
+  top: 0.5rem;
+  z-index: 1;
+}
+
+/* Chrome: uppercase light Inter, like a label strip */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  padding: 1.25rem var(--edge);
+  font-family: var(--font-display);
+  font-weight: 350;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.site-header a {
+  text-decoration: none;
+}
+
+.site-name {
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--accent);
+}
+
+.language-select {
+  font: inherit;
+  font-size: 0.85rem;
+  text-transform: none;
+  color: var(--text);
+  background: var(--field);
+  border: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0.25rem 0.4rem;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5rem) var(--edge);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: clamp(2rem, 7vw, 3rem);
+}
+
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60svh;
+}
+
+.home h1 {
+  font-size: clamp(2.5rem, 11vw, 6rem);
+  margin-bottom: 2rem;
+}
+
+.lede {
+  max-width: 30rem;
+  margin: 0 0 2rem;
+  font-size: 1.4rem;
+  font-weight: 350;
+}
+
+/* The one loud element: a highlighter-style link */
+.cta {
+  padding: 0 0.1em;
+  color: #000;
+  background: var(--accent);
+  text-decoration: none;
+}
+
+.cta:hover {
+  color: #000;
+  background: var(--text);
+}
+
+/* Prose pages */
+.prose {
+  max-width: 46rem;
+  font-size: 1.2rem;
+  font-weight: 350;
+}
+
+.prose h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 3rem 0 1rem;
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+.portrait {
+  width: min(100%, 20rem);
+  height: auto;
+  margin-bottom: 2rem;
+  filter: grayscale(1);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-display);
+}
+
+/* Papers and experience: title in Inter, detail in muted serif */
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 5vw, 3rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entries h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.entries h2 a {
+  text-decoration: none;
+}
+
+.entries p {
+  margin: 0.6rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.entries p strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.aside {
+  margin-top: 3rem;
+  color: var(--muted);
+}
+
+.site-footer {
+  padding: 2rem var(--edge);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (max-width: 40rem) {
+  .site-header {
+    font-size: 0.9rem;
+  }
+}

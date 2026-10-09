@@ -1,0 +1,69 @@
+---
+import { getImage } from "astro:assets";
+import "@fontsource-variable/inter";
+import "@fontsource-variable/source-serif-4";
+import "../styles/global.css";
+import portrait from "../assets/picture.jpg";
+
+const { title } = Astro.props;
+const siteTitle = "Michele Tadiello | Healthcare AI and Informatics";
+const pageTitle = title ? `${title} | Michele Tadiello` : siteTitle;
+const description =
+  "Michele Tadiello applies AI solutions to enhance healthcare through clinical informatics, data strategy, and healthcare operations.";
+const ogImage = new URL((await getImage({ src: portrait, width: 1200 })).src, Astro.site);
+
+const path = Astro.url.pathname.replace(/\/$/, "");
+const nav = [
+  { href: "/papers", key: "navPublications", label: "publications" },
+  { href: "/experience", key: "navExperience", label: "experience" },
+  { href: "/about", key: "navAbout", label: "about" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Michele Tadiello" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="site-name" href="/">Michele Tadiello</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        {
+          nav.map(({ href, key, label }) => (
+            <a href={href} data-i18n={key} aria-current={path === href ? "page" : undefined}>
+              {label}
+            </a>
+          ))
+        }
+        <select id="language-select" class="language-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="it">Italiano</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="ko">한국어</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+        </select>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">© {new Date().getFullYear()} Michele Tadiello</footer>
+    <script src="../scripts/i18n.js"></script>
+  </body>
+</html>

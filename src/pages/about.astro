@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import portrait from "../assets/picture.jpg";
+---
+
+<Base title="About">
+  <h1 data-i18n="aboutTitle">About</h1>
+  <div class="prose">
+    <Image
+      class="portrait"
+      src={portrait}
+      alt="Michele Tadiello in Central Park"
+      widths={[320, 640]}
+      sizes="20rem"
+      loading="eager"
+    />
+    <p data-i18n="aboutLead">
+      My work sits at the intersection of clinical informatics, healthcare AI, and digital health
+      innovation. I have multi-year experience building AI infrastructure, clinical data systems,
+      and strategic partnerships across academic medical centers, startups, and healthcare
+      organizations.
+    </p>
+    <p data-i18n="aboutAdvisory">
+      I advise leaders on AI/ML implementation, healthcare operations, venture strategy, and the
+      practical adoption of emerging technologies in clinical settings. My work also focuses on
+      healthcare affordability, financial toxicity, and data-driven decision-making for patients
+      and health systems.
+    </p>
+    <p data-i18n="aboutInfrastructure">
+      I have developed financial models and analytics tools designed to reduce financial toxicity
+      while supporting better operational and clinical decisions. I also built an AI agent for
+      clinical content retrieval to help nurses access trusted information more efficiently.
+    </p>
+    <p data-i18n="aboutPublications">
+      My research and writing have appeared in peer-reviewed journals including JAMA Network Open
+      and JAMIA, as well as in newspaper articles on the role of artificial intelligence in
+      healthcare.
+    </p>
+    <p data-i18n="aboutEducation">
+      I hold a Master's degree of Management in Clinical Informatics from Duke University School
+      of Medicine and a Bachelor of Nursing from the University of Verona School of Medicine.
+    </p>
+
+    <h2 data-i18n="stackTitle">Stack</h2>
+    <p data-i18n-html="stackInformatics">
+      <strong>Informatics &amp; AI/ML:</strong> NLP/LLM systems, predictive modeling, RAG architecture,
+      clinical analytics, EHR data (Epic Clarity), FHIR/HL7, OMOP CDM.
+    </p>
+    <p data-i18n-html="stackData">
+      <strong>Data:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.
+    </p>
+    <p data-i18n-html="stackEngineering">
+      <strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.
+    </p>
+    <p data-i18n-html="stackCloud">
+      <strong>Cloud/Product:</strong> AWS, Azure, Google Cloud, Jira, Figma.
+    </p>
+
+    <h2 data-i18n="contactTitle">Contact</h2>
+    <ul class="links">
+      <li><a class="cta" href="mailto:mictadiello@gmail.com">mictadiello@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/michele-tadiello" rel="noopener">linkedin</a></li>
+      <li><a href="https://github.com/mictadiello" rel="noopener">github</a></li>
+    </ul>
+  </div>
+</Base>

@@ -1,0 +1,25 @@
+---
+import Base from "../layouts/Base.astro";
+
+const roles = [
+  { org: "Hackensack University Medical Center", key: "roleHackensack", role: "Clinical Informatics Engineer" },
+  { org: "Columbia University Irving Medical Center", key: "roleColumbia", role: "Senior Informatics Specialist" },
+  { org: "One Fact Foundation", key: "roleOneFact", role: "Chief Digital Officer" },
+  { org: "Duke University", key: "roleDuke", role: "Fellow, Design Health Program" },
+  { org: "University Hospital of Verona", key: "roleVerona", role: "Registered Nurse" },
+];
+---
+
+<Base title="Experience">
+  <h1 data-i18n="experienceTitle">Professional Experience</h1>
+  <ul class="entries">
+    {
+      roles.map(({ org, key, role }) => (
+        <li>
+          <h2>{org}</h2>
+          <p data-i18n={key}>{role}</p>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
