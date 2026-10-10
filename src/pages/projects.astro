@@ -10,13 +10,13 @@ const icons = {
   chip: `<rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10" y="10" width="4" height="4"/><path d="M9.5 3v4M14.5 3v4M9.5 17v4M14.5 17v4M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4"/>`,
   chat: `<path d="M4 3.5h16a1 1 0 0 1 1 1v11.5a1 1 0 0 1-1 1h-9.5l-4.5 4v-4H4a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1z"/><path d="M8 10.25h.01M12 10.25h.01M16 10.25h.01" stroke-width="3"/>`,
   exchange: `<rect x="3" y="3.5" width="7" height="7" rx="1"/><rect x="14" y="13.5" width="7" height="7" rx="1"/><path d="M10 7h5a2 2 0 0 1 2 2v4.5M15 11.5l2 2 2-2"/><path d="M14 17H9a2 2 0 0 1-2-2v-4.5M5 12.5l2-2 2 2"/>`,
-  book: `<path d="M12 6.5C10.5 5.3 8.3 4.75 6 4.75C5 4.75 4 4.85 3 5.1V18.6C4 18.35 5 18.25 6 18.25C8.3 18.25 10.5 18.8 12 20C13.5 18.8 15.7 18.25 18 18.25C19 18.25 20 18.35 21 18.6V5.1C20 4.85 19 4.75 18 4.75C15.7 4.75 13.5 5.3 12 6.5Z"/><path d="M12 6.5V20"/>`,
 };
 
 const projects = [
   {
     name: "AI-Powered Clinical Documentation Intelligence",
     key: "projCdi",
+    href: "https://youtu.be/CbKR55ac1jM",
     icon: "document",
     desc: "Using Palantir AIP, it assigns ICD-10 codes and DRGs from clinical notes, identifies missing diagnoses, and highlights CMS-defined CC/MCC severity and reimbursement impact.",
   },
@@ -24,23 +24,25 @@ const projects = [
     name: "SONAICE",
     key: "projSonaice",
     icon: "chip",
-    desc: "Hybrid computational infrastructure powered by NVIDIA GPUs.",
+    desc: "Hybrid computational infrastructure powered by NVIDIA GPUs for Columbia School of Nursing.",
   },
   {
     name: "LEA (Leading Educational Assistant)",
     key: "projLea",
     icon: "chat",
-    desc: "AI chatbot assistant for local deployment on desktop and mobile devices to enhance nursing education and technology literacy.",
+    desc: "AI teaching assistant for Columbia School of Nursing, running locally on desktop and mobile devices to enhance nursing education and technology literacy.",
   },
   {
     name: "Interoperability Feasibility Study: Development of a Master Data Element Set",
     key: "projMde",
+    href: "https://drive.google.com/file/d/1TIEXy4WtOpUl6uigUrIln3qj_6ysrXuI/view?usp=drive_link",
     icon: "exchange",
     desc: "A solution for increasing interoperability of health data between FHIR and OMOP through the creation of a Master Data Element (MDE) set.",
   },
   {
     name: "Heartly: Infant Monitoring Health System",
     key: "projHeartly",
+    href: "https://drive.google.com/file/d/1VoltNlJKetsFXCU_9JorBWGbMvL5e5Ax/view?usp=drive_link",
     logo: heartly,
     // Badge matches the logo's own background so no rectangle shows
     badge: "#e0ecf8",
@@ -52,12 +54,6 @@ const projects = [
     logo: wieny,
     desc: "Dog walking app to promote health and wellbeing through mobility, tracking calories and distance with GPS.",
   },
-  {
-    name: "OurBookshelf",
-    key: "projBookshelf",
-    icon: "book",
-    desc: "Website to store the books you read as a couple or a group, where you can rate books and highlight your favourite quotes.",
-  },
 ];
 ---
 
@@ -65,7 +61,7 @@ const projects = [
   <h1 class="sr-only" data-i18n="projectsTitle">Projects</h1>
   <ul class="entries projects">
     {
-      projects.map(({ name, key, icon, logo, badge, desc }) => (
+      projects.map(({ name, key, href, icon, logo, badge, desc }) => (
         <li>
           {logo ? (
             <Image
@@ -91,7 +87,16 @@ const projects = [
             </svg>
           )}
           <div>
-            <h2>{name}</h2>
+            <h2>
+              {href ? (
+                <a href={href} target="_blank" rel="noopener">
+                  {name}<span aria-hidden="true">&nbsp;↗</span>
+                  <span class="sr-only"> (opens in a new tab)</span>
+                </a>
+              ) : (
+                name
+              )}
+            </h2>
             <p data-i18n={key}>{desc}</p>
           </div>
         </li>

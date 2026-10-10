@@ -103,9 +103,9 @@ a {
   background: none;
 }
 
-/* The home page is the name, so the strip does not repeat it */
+/* Home: the name sits in the corner, smaller than on the other pages */
 body:has(.home) .site-name {
-  visibility: hidden;
+  font-size: 0.75em;
 }
 
 .site-nav {
@@ -152,7 +152,7 @@ main:has(.home) {
   padding: 0;
 }
 
-/* Intro beside the portrait; stacks on narrow screens */
+/* Home: title and focus lines across the full width */
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -175,16 +175,6 @@ main:has(.home) {
   font-weight: 700;
 }
 
-.home-portrait {
-  flex: 1 1 16rem;
-  max-width: 26rem;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  /* Keep the face in frame when the photo is cropped */
-  object-position: 50% 20%;
-}
 
 .lede {
   max-width: 30rem;
