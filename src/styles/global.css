@@ -250,7 +250,7 @@ main:has(.home) {
 
 /* Hover preview only where hover is real; touch screens keep a stuck "hover" after a tap */
 @media (hover: hover) and (pointer: fine) {
-  .focus-item:hover .def {
+  .focus-item:not(.hover-off):hover .def {
     opacity: 1;
     visibility: visible;
   }

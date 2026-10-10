@@ -53,6 +53,8 @@ import DataStreams from "../components/DataStreams.astro";
   const setOpen = (item: HTMLElement, open: boolean) => {
     item.classList.toggle("is-open", open);
     item.querySelector(".term")?.setAttribute("aria-expanded", String(open));
+    // Closed while the mouse is still over it: pause the hover preview, or the box stays up
+    if (!open && item.matches(":hover")) item.classList.add("hover-off");
   };
   const closeAll = (except?: HTMLElement) => items.forEach((i) => i !== except && setOpen(i, false));
 
@@ -67,6 +69,8 @@ import DataStreams from "../components/DataStreams.astro";
       setOpen(item, false);
       term.focus();
     });
+    // Hover preview works again once the mouse has left the item
+    item.addEventListener("mouseleave", () => item.classList.remove("hover-off"));
   }
 
   // A tap or click anywhere outside the open box closes it; so does Esc
