@@ -5,13 +5,13 @@ import portrait from "../assets/picture.jpg";
 ---
 
 <Base title="About">
-  <h1 data-i18n="aboutTitle">About</h1>
+  <h1 class="sr-only" data-i18n="aboutTitle">About</h1>
   <div class="prose">
     <Image
       class="portrait"
       src={portrait}
-      alt="Michele Tadiello in Central Park"
-      widths={[320, 640]}
+      alt="Michele Tadiello in the Dolomites, Italy"
+      widths={[480, 960]}
       sizes="20rem"
       loading="eager"
     />
@@ -56,12 +56,11 @@ import portrait from "../assets/picture.jpg";
     <p data-i18n-html="stackCloud">
       <strong>Cloud/Product:</strong> AWS, Azure, Google Cloud, Jira, Figma.
     </p>
-
-    <h2 data-i18n="contactTitle">Contact</h2>
-    <ul class="links">
-      <li><a class="cta" href="mailto:mictadiello@gmail.com">mictadiello@gmail.com</a></li>
-      <li><a href="https://www.linkedin.com/in/michele-tadiello" rel="noopener">linkedin</a></li>
-      <li><a href="https://github.com/mictadiello" rel="noopener">github</a></li>
-    </ul>
   </div>
+  <ul class="links" aria-label="Contact">
+    <li><a href="mailto:mictadiello@gmail.com" data-i18n="navEmail">email</a></li>
+    <li><a href="https://www.linkedin.com/in/michele-tadiello" rel="noopener">linkedin</a></li>
+    <li><a href="https://github.com/mictadiello" rel="noopener">github</a></li>
+    <li><a href="https://scholar.google.com/citations?hl=it&user=yyzWSssAAAAJ" rel="noopener">scholar</a></li>
+  </ul>
 </Base>
