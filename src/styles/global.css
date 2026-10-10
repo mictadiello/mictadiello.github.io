@@ -207,21 +207,29 @@ main:has(.home) {
   width: fit-content;
 }
 
+/* The term is a real button, styled to look like the surrounding text */
 .term {
-  cursor: help;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: 0;
+  cursor: pointer;
   text-decoration: underline dotted 1px;
   text-underline-offset: 0.25em;
 }
 
-/* Definition box: hidden until the term is hovered, tapped or focused */
+/* Definition box: hidden until opened (click/tap/Enter), or previewed on mouse hover */
 .def {
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 2;
+  display: block;
   width: min(26rem, 85vw);
   margin-top: 0.4rem;
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 2.75rem 0.85rem 1rem;
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--text);
@@ -233,13 +241,42 @@ main:has(.home) {
   transition:
     opacity 0.15s,
     visibility 0.15s;
-  pointer-events: none;
 }
 
-.focus-item:hover .def,
-.focus-item:focus-within .def {
+.focus-item.is-open .def {
   opacity: 1;
   visibility: visible;
+}
+
+/* Hover preview only where hover is real; touch screens keep a stuck "hover" after a tap */
+@media (hover: hover) and (pointer: fine) {
+  .focus-item:hover .def {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* × button: a full 44px touch target in the box's corner, shown once the box is opened */
+.def-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.focus-item:not(.is-open) .def-close {
+  display: none;
 }
 
 /* The one loud element: a highlighter-style link */

@@ -8,24 +8,31 @@ import DataStreams from "../components/DataStreams.astro";
     <DataStreams />
     <div class="home-text">
       <h1 data-i18n="heroTitle">I get clinical data flowing and AI working where care happens</h1>
-      <!-- Focus areas; terms with a definition show it on hover, tap or keyboard focus -->
+      <!-- Focus areas: a term with a definition shows it on mouse hover, or opens it on
+           click/tap/Enter; the box closes with its × button, a tap outside, Esc or the term -->
       <p class="lede focus">
         <span class="focus-item">
-          <span class="term" tabindex="0" aria-describedby="def-ci" data-i18n="focusCi">Clinical Informatics</span>
-          <span class="def" id="def-ci" role="tooltip" data-i18n="defCi">
-            Clinical informatics is the interdisciplinary field that applies information technology,
-            data science, and communication systems to healthcare delivery. It bridges the gap between
-            medical practice and technology to improve patient safety, optimize clinical workflows, and
-            enhance health outcomes.
+          <button class="term" type="button" aria-expanded="false" aria-controls="def-ci" data-i18n="focusCi">Clinical Informatics</button>
+          <span class="def" id="def-ci">
+            <span data-i18n="defCi">
+              Clinical informatics is the interdisciplinary field that applies information technology,
+              data science, and communication systems to healthcare delivery. It bridges the gap between
+              medical practice and technology to improve patient safety, optimize clinical workflows, and
+              enhance health outcomes.
+            </span>
+            <button class="def-close" type="button" aria-label="Close">×</button>
           </span>
         </span>
         <span class="focus-item">
-          <span class="term" tabindex="0" aria-describedby="def-ai" data-i18n="focusAi">Healthcare AI</span>
-          <span class="def" id="def-ai" role="tooltip" data-i18n="defAi">
-            Artificial intelligence (AI) transforms every aspect of healthcare—from research and new
-            medicine development to patient care, operations, and healthcare data management. Healthcare
-            organizations can use AI to introduce efficiencies and improve outcomes for patients and
-            healthcare professionals across the sector.
+          <button class="term" type="button" aria-expanded="false" aria-controls="def-ai" data-i18n="focusAi">Healthcare AI</button>
+          <span class="def" id="def-ai">
+            <span data-i18n="defAi">
+              Artificial intelligence (AI) transforms every aspect of healthcare—from research and new
+              medicine development to patient care, operations, and healthcare data management. Healthcare
+              organizations can use AI to introduce efficiencies and improve outcomes for patients and
+              healthcare professionals across the sector.
+            </span>
+            <button class="def-close" type="button" aria-label="Close">×</button>
           </span>
         </span>
         <span class="focus-item" data-i18n="focusStrategy">Strategy &amp; Advisory</span>
@@ -38,3 +45,35 @@ import DataStreams from "../components/DataStreams.astro";
     </div>
   </div>
 </Base>
+
+<script>
+  // Open/close the definition boxes; hover alone only previews them on mouse devices (CSS)
+  const items = [...document.querySelectorAll<HTMLElement>(".focus-item")].filter((i) => i.querySelector(".term"));
+
+  const setOpen = (item: HTMLElement, open: boolean) => {
+    item.classList.toggle("is-open", open);
+    item.querySelector(".term")?.setAttribute("aria-expanded", String(open));
+  };
+  const closeAll = (except?: HTMLElement) => items.forEach((i) => i !== except && setOpen(i, false));
+
+  for (const item of items) {
+    const term = item.querySelector<HTMLButtonElement>(".term")!;
+    term.addEventListener("click", () => {
+      const open = !item.classList.contains("is-open");
+      closeAll(item);
+      setOpen(item, open);
+    });
+    item.querySelector(".def-close")?.addEventListener("click", () => {
+      setOpen(item, false);
+      term.focus();
+    });
+  }
+
+  // A tap or click anywhere outside the open box closes it; so does Esc
+  document.addEventListener("click", (e) => {
+    if (!(e.target as Element).closest(".focus-item.is-open")) closeAll();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeAll();
+  });
+</script>

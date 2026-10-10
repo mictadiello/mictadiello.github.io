@@ -40,13 +40,8 @@ const translations = {
     publicationsTitle: "Publications",
     scholarLink: "View all publications on Google Scholar",
     stackTitle: "Stack",
-    stackInformatics:
-      "<strong>Informatics &amp; AI/ML:</strong> NLP/LLM systems, predictive modeling, RAG architecture, clinical analytics, EHR data (Epic Clarity), FHIR/HL7, OMOP CDM.",
-    stackData:
-      "<strong>Data:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
-    stackEngineering:
-      "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
-    stackCloud: "<strong>Cloud/Product:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    stackInformatics: "<strong>Informatics &amp; AI/ML:</strong> GenAI, NLP/LLM systems, predictive modeling, RAG architecture, clinical analytics, EHR data (Epic Clarity), FHIR/HL7, OMOP CDM, GCP, RWE.",
+    stackTechnical: "<strong>Technical Stack:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, OpenAI API, Claude Code, Microsoft Copilot, BigQuery, Dataform, Dataplex, Looker Studio, SQL, MySQL, AWS, Azure, Google Cloud, GitHub, Jira, Figma, Asana.",
     navProjects: "projects",
     projectsTitle: "Projects",
     projCdi: "Using Palantir AIP, it assigns ICD-10 codes and DRGs from clinical notes, identifies missing diagnoses, and highlights CMS-defined CC/MCC severity and reimbursement impact.",
@@ -97,13 +92,8 @@ const translations = {
     publicationsTitle: "Pubblicazioni",
     scholarLink: "Vedi tutte le pubblicazioni su Google Scholar",
     stackTitle: "Stack",
-    stackInformatics:
-      "<strong>Informatica e IA/ML:</strong> sistemi NLP/LLM, modellazione predittiva, architettura RAG, analytics clinici, dati EHR (Epic Clarity), FHIR/HL7, OMOP CDM.",
-    stackData:
-      "<strong>Dati:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
-    stackEngineering:
-      "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
-    stackCloud: "<strong>Cloud/Prodotto:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    stackInformatics: "<strong>Informatica e IA/ML:</strong> GenAI, sistemi NLP/LLM, modellazione predittiva, architettura RAG, analytics clinici, dati EHR (Epic Clarity), FHIR/HL7, OMOP CDM, GCP, RWE.",
+    stackTechnical: "<strong>Stack tecnologico:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, OpenAI API, Claude Code, Microsoft Copilot, BigQuery, Dataform, Dataplex, Looker Studio, SQL, MySQL, AWS, Azure, Google Cloud, GitHub, Jira, Figma, Asana.",
     navProjects: "progetti",
     projectsTitle: "Progetti",
     projCdi: "Basato su Palantir AIP, assegna codici ICD-10 e DRG a partire dalle note cliniche, individua le diagnosi mancanti ed evidenzia la gravità CC/MCC definita dai CMS e il suo impatto sui rimborsi.",
@@ -154,13 +144,8 @@ const translations = {
     publicationsTitle: "Publications",
     scholarLink: "Voir toutes les publications sur Google Scholar",
     stackTitle: "Stack",
-    stackInformatics:
-      "<strong>Informatique &amp; IA/ML :</strong> systèmes NLP/LLM, modélisation prédictive, architecture RAG, analytique clinique, données EHR (Epic Clarity), FHIR/HL7, OMOP CDM.",
-    stackData:
-      "<strong>Données :</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
-    stackEngineering:
-      "<strong>Ingénierie :</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
-    stackCloud: "<strong>Cloud/Produit :</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    stackInformatics: "<strong>Informatique &amp; IA/ML :</strong> GenAI, systèmes NLP/LLM, modélisation prédictive, architecture RAG, analytique clinique, données EHR (Epic Clarity), FHIR/HL7, OMOP CDM, GCP, RWE.",
+    stackTechnical: "<strong>Stack technique :</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, OpenAI API, Claude Code, Microsoft Copilot, BigQuery, Dataform, Dataplex, Looker Studio, SQL, MySQL, AWS, Azure, Google Cloud, GitHub, Jira, Figma, Asana.",
     navProjects: "projets",
     projectsTitle: "Projets",
     projCdi: "Construit sur Palantir AIP, il attribue des codes ICD-10 et des DRG à partir des notes cliniques, repère les diagnostics manquants et met en évidence la sévérité CC/MCC définie par les CMS et son impact sur le remboursement.",
@@ -211,13 +196,8 @@ const translations = {
     publicationsTitle: "Publikationen",
     scholarLink: "Alle Publikationen auf Google Scholar ansehen",
     stackTitle: "Stack",
-    stackInformatics:
-      "<strong>Informatik &amp; AI/ML:</strong> NLP/LLM-Systeme, prädiktive Modellierung, RAG-Architektur, klinische Analytik, EHR-Daten (Epic Clarity), FHIR/HL7, OMOP CDM.",
-    stackData:
-      "<strong>Daten:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
-    stackEngineering:
-      "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
-    stackCloud: "<strong>Cloud/Produkt:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    stackInformatics: "<strong>Informatik &amp; AI/ML:</strong> GenAI, NLP/LLM-Systeme, prädiktive Modellierung, RAG-Architektur, klinische Analytik, EHR-Daten (Epic Clarity), FHIR/HL7, OMOP CDM, GCP, RWE.",
+    stackTechnical: "<strong>Tech-Stack:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, OpenAI API, Claude Code, Microsoft Copilot, BigQuery, Dataform, Dataplex, Looker Studio, SQL, MySQL, AWS, Azure, Google Cloud, GitHub, Jira, Figma, Asana.",
     navProjects: "projekte",
     projectsTitle: "Projekte",
     projCdi: "Auf Basis von Palantir AIP vergibt es ICD-10-Codes und DRGs aus klinischen Notizen, erkennt fehlende Diagnosen und hebt den von CMS definierten CC/MCC-Schweregrad und seine Auswirkung auf die Vergütung hervor.",
@@ -268,13 +248,8 @@ const translations = {
     publicationsTitle: "Publicaciones",
     scholarLink: "Ver todas las publicaciones en Google Scholar",
     stackTitle: "Stack",
-    stackInformatics:
-      "<strong>Informática &amp; AI/ML:</strong> sistemas NLP/LLM, modelado predictivo, arquitectura RAG, analítica clínica, datos EHR (Epic Clarity), FHIR/HL7, OMOP CDM.",
-    stackData:
-      "<strong>Datos:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
-    stackEngineering:
-      "<strong>Ingeniería:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
-    stackCloud: "<strong>Cloud/Producto:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    stackInformatics: "<strong>Informática &amp; AI/ML:</strong> GenAI, sistemas NLP/LLM, modelado predictivo, arquitectura RAG, analítica clínica, datos EHR (Epic Clarity), FHIR/HL7, OMOP CDM, GCP, RWE.",
+    stackTechnical: "<strong>Stack tecnológico:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, OpenAI API, Claude Code, Microsoft Copilot, BigQuery, Dataform, Dataplex, Looker Studio, SQL, MySQL, AWS, Azure, Google Cloud, GitHub, Jira, Figma, Asana.",
     navProjects: "proyectos",
     projectsTitle: "Proyectos",
     projCdi: "Basado en Palantir AIP, asigna códigos ICD-10 y DRG a partir de las notas clínicas, identifica diagnósticos faltantes y destaca la gravedad CC/MCC definida por los CMS y su impacto en el reembolso.",
@@ -325,13 +300,8 @@ const translations = {
     publicationsTitle: "출판물",
     scholarLink: "Google Scholar에서 모든 출판물 보기",
     stackTitle: "스택",
-    stackInformatics:
-      "<strong>정보학 &amp; AI/ML:</strong> NLP/LLM 시스템, 예측 모델링, RAG 아키텍처, 임상 분석, EHR 데이터(Epic Clarity), FHIR/HL7, OMOP CDM.",
-    stackData:
-      "<strong>데이터:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
-    stackEngineering:
-      "<strong>엔지니어링:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
-    stackCloud: "<strong>클라우드/제품:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    stackInformatics: "<strong>정보학 &amp; AI/ML:</strong> GenAI, NLP/LLM 시스템, 예측 모델링, RAG 아키텍처, 임상 분석, EHR 데이터(Epic Clarity), FHIR/HL7, OMOP CDM, GCP, RWE.",
+    stackTechnical: "<strong>기술 스택:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, OpenAI API, Claude Code, Microsoft Copilot, BigQuery, Dataform, Dataplex, Looker Studio, SQL, MySQL, AWS, Azure, Google Cloud, GitHub, Jira, Figma, Asana.",
     navProjects: "프로젝트",
     projectsTitle: "프로젝트",
     projCdi: "Palantir AIP 기반으로 임상 노트에서 ICD-10 코드와 DRG를 부여하고, 누락된 진단을 찾아내며, CMS가 정의한 CC/MCC 중증도와 보험 상환 영향을 표시합니다.",
@@ -382,13 +352,8 @@ const translations = {
     publicationsTitle: "出版物",
     scholarLink: "在 Google Scholar 查看全部出版物",
     stackTitle: "技术栈",
-    stackInformatics:
-      "<strong>信息学 &amp; AI/ML:</strong> NLP/LLM 系统、预测建模、RAG 架构、临床分析、EHR 数据 (Epic Clarity)、FHIR/HL7、OMOP CDM。",
-    stackData:
-      "<strong>数据:</strong> SQL、MySQL、BigQuery、Dataform、Dataplex、Looker Studio。",
-    stackEngineering:
-      "<strong>工程:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、Docker、GitHub。",
-    stackCloud: "<strong>云/产品:</strong> AWS、Azure、Google Cloud、Jira、Figma。",
+    stackInformatics: "<strong>信息学 &amp; AI/ML:</strong> GenAI、NLP/LLM 系统、预测建模、RAG 架构、临床分析、EHR 数据 (Epic Clarity)、FHIR/HL7、OMOP CDM、GCP、RWE。",
+    stackTechnical: "<strong>技术栈:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、OpenAI API、Claude Code、Microsoft Copilot、BigQuery、Dataform、Dataplex、Looker Studio、SQL、MySQL、AWS、Azure、Google Cloud、GitHub、Jira、Figma、Asana。",
     navProjects: "项目",
     projectsTitle: "项目",
     projCdi: "基于 Palantir AIP，从临床记录中分配 ICD-10 编码和 DRG，识别遗漏的诊断，并突出显示 CMS 定义的 CC/MCC 严重程度及其对报销的影响。",
@@ -439,13 +404,8 @@ const translations = {
     publicationsTitle: "出版物",
     scholarLink: "Google Scholarですべての出版物を見る",
     stackTitle: "スタック",
-    stackInformatics:
-      "<strong>情報学 &amp; AI/ML:</strong> NLP/LLMシステム、予測モデリング、RAGアーキテクチャ、臨床分析、EHRデータ (Epic Clarity)、FHIR/HL7、OMOP CDM。",
-    stackData:
-      "<strong>データ:</strong> SQL、MySQL、BigQuery、Dataform、Dataplex、Looker Studio。",
-    stackEngineering:
-      "<strong>エンジニアリング:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、Docker、GitHub。",
-    stackCloud: "<strong>クラウド/プロダクト:</strong> AWS、Azure、Google Cloud、Jira、Figma。",
+    stackInformatics: "<strong>情報学 &amp; AI/ML:</strong> GenAI、NLP/LLMシステム、予測モデリング、RAGアーキテクチャ、臨床分析、EHRデータ (Epic Clarity)、FHIR/HL7、OMOP CDM、GCP、RWE。",
+    stackTechnical: "<strong>技術スタック:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、OpenAI API、Claude Code、Microsoft Copilot、BigQuery、Dataform、Dataplex、Looker Studio、SQL、MySQL、AWS、Azure、Google Cloud、GitHub、Jira、Figma、Asana。",
     navProjects: "プロジェクト",
     projectsTitle: "プロジェクト",
     projCdi: "Palantir AIPを基盤に、臨床記録からICD-10コードとDRGを割り当て、見落とされた診断を特定し、CMSが定めるCC/MCCの重症度と診療報酬への影響を示します。",
