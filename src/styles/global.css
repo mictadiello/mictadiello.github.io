@@ -204,6 +204,8 @@ main:has(.home) {
   color: var(--bg);
   background: var(--accent);
   text-decoration: none;
+  /* The home text's readability halo would smudge this solid block */
+  text-shadow: none;
 }
 
 .cta:hover {
@@ -312,6 +314,11 @@ main:has(.home) {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   font-weight: 600;
   line-height: 1.25;
+}
+
+/* Experience: workplace under the role; larger than detail text, never above the role (min 1.25rem) */
+.entries .org {
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
 }
 
 .entries h2 a {
