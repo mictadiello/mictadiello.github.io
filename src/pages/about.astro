@@ -1,10 +1,31 @@
 ---
+import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
+import portrait from "../assets/picture.jpg";
 ---
 
 <Base title="About">
   <h1 class="sr-only" data-i18n="aboutTitle">About</h1>
   <div class="prose">
+    <div class="portrait">
+      <Image
+        src={portrait}
+        alt="Michele Tadiello in the Dolomites, Italy"
+        widths={[480, 960]}
+        sizes="20rem"
+        loading="eager"
+      />
+      <!-- Same photo again, masked to the sky; it pans on scroll so the clouds drift -->
+      <Image
+        class="portrait-sky"
+        src={portrait}
+        alt=""
+        aria-hidden="true"
+        widths={[480, 960]}
+        sizes="20rem"
+        loading="eager"
+      />
+    </div>
     <p data-i18n="aboutLead">
       I help health systems and health-tech companies adopt AI and digital health technologies,
       and use clinical and operational data to find bottlenecks and turn analytics into decisions.
@@ -38,3 +59,28 @@ import Base from "../layouts/Base.astro";
     <li><a href="https://scholar.google.com/citations?user=yyzWSssAAAAJ" rel="noopener">scholar</a></li>
   </ul>
 </Base>
+
+<script>
+  // Pan the sky layer with the scroll position so the clouds drift past
+  const sky = document.querySelector<HTMLImageElement>(".portrait-sky");
+  if (sky && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let queued = false;
+    const update = () => {
+      // Full drift within ~350px, while the sky is still on screen
+      const room = Math.min(document.documentElement.scrollHeight - innerHeight, 350);
+      const progress = room > 0 ? Math.min(scrollY / room, 1) : 0;
+      sky.style.objectPosition = `${62 - progress * 40}% center`;
+      queued = false;
+    };
+    addEventListener(
+      "scroll",
+      () => {
+        if (!queued) {
+          queued = true;
+          requestAnimationFrame(update);
+        }
+      },
+      { passive: true },
+    );
+  }
+</script>

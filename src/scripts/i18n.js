@@ -483,6 +483,3 @@ try {
   savedLanguage = localStorage.getItem("siteLanguage");
 } catch {}
 setLanguage(savedLanguage || "en");
-
-// Footer year is baked in at build time; keep it current between deploys.
-document.querySelector("#year").textContent = new Date().getFullYear();

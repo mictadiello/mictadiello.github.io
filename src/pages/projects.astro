@@ -1,16 +1,16 @@
 ---
 import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
-import heartly from "../assets/projects/heartly.webp";
 import wieny from "../assets/projects/wieny.jpg";
-import ourbookshelf from "../assets/projects/ourbookshelf.png";
+import heartly from "../assets/projects/heartly.webp";
 
-// Line icons (24×24, stroked in currentColor) for projects without a logo
+// One line-icon style for every project: 24×24, stroked in currentColor
 const icons = {
   document: `<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5"/><path d="M8 13h8M8 16.5h6"/><path d="M9.5 5.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z"/>`,
   chip: `<rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10" y="10" width="4" height="4"/><path d="M9.5 3v4M14.5 3v4M9.5 17v4M14.5 17v4M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4"/>`,
-  chat: `<path d="M4 3.5h16a1 1 0 0 1 1 1v11.5a1 1 0 0 1-1 1h-9.5l-4.5 4v-4H4a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1z"/><path d="M8 10.25h.01M12 10.25h.01M16 10.25h.01" stroke-width="2.4"/>`,
+  chat: `<path d="M4 3.5h16a1 1 0 0 1 1 1v11.5a1 1 0 0 1-1 1h-9.5l-4.5 4v-4H4a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1z"/><path d="M8 10.25h.01M12 10.25h.01M16 10.25h.01" stroke-width="3"/>`,
   exchange: `<rect x="3" y="3.5" width="7" height="7" rx="1"/><rect x="14" y="13.5" width="7" height="7" rx="1"/><path d="M10 7h5a2 2 0 0 1 2 2v4.5M15 11.5l2 2 2-2"/><path d="M14 17H9a2 2 0 0 1-2-2v-4.5M5 12.5l2-2 2 2"/>`,
+  book: `<path d="M12 6.5C10.5 5.3 8.3 4.75 6 4.75C5 4.75 4 4.85 3 5.1V18.6C4 18.35 5 18.25 6 18.25C8.3 18.25 10.5 18.8 12 20C13.5 18.8 15.7 18.25 18 18.25C19 18.25 20 18.35 21 18.6V5.1C20 4.85 19 4.75 18 4.75C15.7 4.75 13.5 5.3 12 6.5Z"/><path d="M12 6.5V20"/>`,
 };
 
 const projects = [
@@ -42,6 +42,8 @@ const projects = [
     name: "Heartly: Infant Monitoring Health System",
     key: "projHeartly",
     logo: heartly,
+    // Badge matches the logo's own background so no rectangle shows
+    badge: "#e0ecf8",
     desc: "Medical device prototypes focused on tracking pediatric patients with Hypoplastic Left Heart Syndrome (HLHS).",
   },
   {
@@ -53,7 +55,7 @@ const projects = [
   {
     name: "OurBookshelf",
     key: "projBookshelf",
-    logo: ourbookshelf,
+    icon: "book",
     desc: "Website to store the books you read as a couple or a group, where you can rate books and highlight your favourite quotes.",
   },
 ];
@@ -63,24 +65,31 @@ const projects = [
   <h1 class="sr-only" data-i18n="projectsTitle">Projects</h1>
   <ul class="entries projects">
     {
-      projects.map(({ name, key, icon, logo, desc }) => (
+      projects.map(({ name, key, icon, logo, badge, desc }) => (
         <li>
-          <div class="project-icon" aria-hidden="true">
-            {logo ? (
-              <Image src={logo} alt="" widths={[80, 160]} sizes="5rem" />
-            ) : (
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.25"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <Fragment set:html={icons[icon]} />
-              </svg>
-            )}
-          </div>
+          {logo ? (
+            <Image
+              class:list={["project-icon", "project-logo", { wide: logo.width > logo.height }]}
+              style={badge && `background: ${badge}`}
+              src={logo}
+              alt=""
+              widths={[56, 112]}
+              sizes="3.5rem"
+            />
+          ) : (
+            <svg
+              class="project-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <Fragment set:html={icons[icon]} />
+            </svg>
+          )}
           <div>
             <h2>{name}</h2>
             <p data-i18n={key}>{desc}</p>

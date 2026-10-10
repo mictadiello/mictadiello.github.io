@@ -14,9 +14,9 @@ const ogImage = new URL((await getImage({ src: portrait, width: 1200 })).src, As
 
 const path = Astro.url.pathname.replace(/\/$/, "");
 const nav = [
+  { href: "/projects", key: "navProjects", label: "projects" },
   { href: "/papers", key: "navPublications", label: "publications" },
   { href: "/experience", key: "navExperience", label: "experience" },
-  { href: "/projects", key: "navProjects", label: "projects" },
   { href: "/about", key: "navAbout", label: "about" },
 ];
 ---
@@ -68,9 +68,6 @@ const nav = [
     <main id="main">
       <slot />
     </main>
-    <footer class="site-footer">
-      <span>© <span id="year">{new Date().getFullYear()}</span> Michele Tadiello</span>
-    </footer>
     <script>
       const btn = document.querySelector(".menu-btn");
       btn.addEventListener("click", () =>
