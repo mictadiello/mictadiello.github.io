@@ -8,8 +8,27 @@ import DataStreams from "../components/DataStreams.astro";
     <DataStreams />
     <div class="home-text">
       <h1 data-i18n="heroTitle">I get clinical data flowing and AI working where care happens</h1>
-      <p class="lede" data-i18n-html="heroFocus">
-        Clinical Informatics<br />Healthcare AI<br />Strategy &amp; Advisory
+      <!-- Focus areas; terms with a definition show it on hover, tap or keyboard focus -->
+      <p class="lede focus">
+        <span class="focus-item">
+          <span class="term" tabindex="0" aria-describedby="def-ci" data-i18n="focusCi">Clinical Informatics</span>
+          <span class="def" id="def-ci" role="tooltip" data-i18n="defCi">
+            Clinical informatics is the interdisciplinary field that applies information technology,
+            data science, and communication systems to healthcare delivery. It bridges the gap between
+            medical practice and technology to improve patient safety, optimize clinical workflows, and
+            enhance health outcomes.
+          </span>
+        </span>
+        <span class="focus-item">
+          <span class="term" tabindex="0" aria-describedby="def-ai" data-i18n="focusAi">Healthcare AI</span>
+          <span class="def" id="def-ai" role="tooltip" data-i18n="defAi">
+            Artificial intelligence (AI) transforms every aspect of healthcare—from research and new
+            medicine development to patient care, operations, and healthcare data management. Healthcare
+            organizations can use AI to introduce efficiencies and improve outcomes for patients and
+            healthcare professionals across the sector.
+          </span>
+        </span>
+        <span class="focus-item" data-i18n="focusStrategy">Strategy &amp; Advisory</span>
       </p>
       <p class="lede">
         <a class="cta" href="mailto:mictadiello@gmail.com" data-i18n="ctaContact">Get in touch</a>

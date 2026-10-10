@@ -199,10 +199,53 @@ main:has(.home) {
   font-weight: 350;
 }
 
+/* Focus areas: one per line; a dotted underline marks terms that have a definition */
+.focus-item {
+  position: relative;
+  display: block;
+  width: fit-content;
+}
+
+.term {
+  cursor: help;
+  text-decoration: underline dotted 1px;
+  text-underline-offset: 0.25em;
+}
+
+/* Definition box: hidden until the term is hovered, tapped or focused */
+.def {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  width: min(26rem, 85vw);
+  margin-top: 0.4rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--field);
+  border: 1px solid var(--line);
+  text-shadow: none;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.15s,
+    visibility 0.15s;
+  pointer-events: none;
+}
+
+.focus-item:hover .def,
+.focus-item:focus-within .def {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* The one loud element: a highlighter-style link */
 .cta {
   color: var(--bg);
   background: var(--accent);
+  font-weight: 700;
   text-decoration: none;
   /* The home text's readability halo would smudge this solid block */
   text-shadow: none;
