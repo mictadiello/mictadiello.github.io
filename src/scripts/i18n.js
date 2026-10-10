@@ -43,6 +43,15 @@ const translations = {
     stackEngineering:
       "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Product:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    navProjects: "projects",
+    projectsTitle: "Projects",
+    projCdi: "Using Palantir AIP, it assigns ICD-10 codes and DRGs from clinical notes, identifies missing diagnoses, and highlights CMS-defined CC/MCC severity and reimbursement impact.",
+    projSonaice: "Hybrid computational infrastructure powered by NVIDIA GPUs.",
+    projLea: "AI chatbot assistant for local deployment on desktop and mobile devices to enhance nursing education and technology literacy.",
+    projMde: "A solution for increasing interoperability of health data between FHIR and OMOP through the creation of a Master Data Element (MDE) set.",
+    projHeartly: "Medical device prototypes focused on tracking pediatric patients with Hypoplastic Left Heart Syndrome (HLHS).",
+    projWieny: "Dog walking app to promote health and wellbeing through mobility, tracking calories and distance with GPS.",
+    projBookshelf: "Website to store the books you read as a couple or a group, where you can rate books and highlight your favourite quotes."
   },
   it: {
     navAbout: "profilo",
@@ -88,6 +97,15 @@ const translations = {
     stackEngineering:
       "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Prodotto:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    navProjects: "progetti",
+    projectsTitle: "Progetti",
+    projCdi: "Basato su Palantir AIP, assegna codici ICD-10 e DRG a partire dalle note cliniche, individua le diagnosi mancanti ed evidenzia la gravità CC/MCC definita dai CMS e il suo impatto sui rimborsi.",
+    projSonaice: "Infrastruttura computazionale ibrida basata su GPU NVIDIA.",
+    projLea: "Assistente chatbot di IA da installare in locale su desktop e dispositivi mobili, per migliorare la formazione infermieristica e l'alfabetizzazione tecnologica.",
+    projMde: "Una soluzione per aumentare l'interoperabilità dei dati sanitari tra FHIR e OMOP attraverso la creazione di un set di Master Data Element (MDE).",
+    projHeartly: "Prototipi di dispositivi medici per il monitoraggio dei pazienti pediatrici con sindrome del cuore sinistro ipoplasico (HLHS).",
+    projWieny: "App di dog walking che promuove salute e benessere attraverso il movimento, tracciando calorie e distanza con il GPS.",
+    projBookshelf: "Sito web per raccogliere i libri che si leggono in coppia o in gruppo, dove valutare i libri e mettere in evidenza le citazioni preferite."
   },
   fr: {
     navAbout: "profil",
@@ -133,6 +151,15 @@ const translations = {
     stackEngineering:
       "<strong>Ingénierie :</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Produit :</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    navProjects: "projets",
+    projectsTitle: "Projets",
+    projCdi: "Construit sur Palantir AIP, il attribue des codes ICD-10 et des DRG à partir des notes cliniques, repère les diagnostics manquants et met en évidence la sévérité CC/MCC définie par les CMS et son impact sur le remboursement.",
+    projSonaice: "Infrastructure de calcul hybride propulsée par des GPU NVIDIA.",
+    projLea: "Assistant conversationnel d'IA à déployer localement sur ordinateur et mobile, pour renforcer la formation infirmière et la culture technologique.",
+    projMde: "Une solution pour améliorer l'interopérabilité des données de santé entre FHIR et OMOP grâce à la création d'un ensemble de Master Data Elements (MDE).",
+    projHeartly: "Prototypes de dispositifs médicaux pour le suivi des patients pédiatriques atteints du syndrome d'hypoplasie du cœur gauche (HLHS).",
+    projWieny: "Application de promenade de chiens qui favorise la santé et le bien-être par la mobilité, en suivant les calories et la distance par GPS.",
+    projBookshelf: "Site web pour conserver les livres que l'on lit en couple ou en groupe, où l'on peut noter les livres et mettre en avant ses citations préférées."
   },
   de: {
     navAbout: "profil",
@@ -178,6 +205,15 @@ const translations = {
     stackEngineering:
       "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Produkt:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    navProjects: "projekte",
+    projectsTitle: "Projekte",
+    projCdi: "Auf Basis von Palantir AIP vergibt es ICD-10-Codes und DRGs aus klinischen Notizen, erkennt fehlende Diagnosen und hebt den von CMS definierten CC/MCC-Schweregrad und seine Auswirkung auf die Vergütung hervor.",
+    projSonaice: "Hybride Recheninfrastruktur auf Basis von NVIDIA-GPUs.",
+    projLea: "KI-Chatbot-Assistent zur lokalen Nutzung auf Desktop- und Mobilgeräten, um die Pflegeausbildung und die technologische Kompetenz zu stärken.",
+    projMde: "Eine Lösung, die die Interoperabilität von Gesundheitsdaten zwischen FHIR und OMOP durch die Erstellung eines Master-Data-Element-Sets (MDE) verbessert.",
+    projHeartly: "Prototypen medizinischer Geräte zur Überwachung pädiatrischer Patienten mit hypoplastischem Linksherzsyndrom (HLHS).",
+    projWieny: "Dog-Walking-App, die Gesundheit und Wohlbefinden durch Bewegung fördert und Kalorien sowie Strecke per GPS erfasst.",
+    projBookshelf: "Website, um Bücher zu sammeln, die man als Paar oder Gruppe liest, sie zu bewerten und Lieblingszitate hervorzuheben."
   },
   es: {
     navAbout: "perfil",
@@ -223,6 +259,15 @@ const translations = {
     stackEngineering:
       "<strong>Ingeniería:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Producto:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    navProjects: "proyectos",
+    projectsTitle: "Proyectos",
+    projCdi: "Basado en Palantir AIP, asigna códigos ICD-10 y DRG a partir de las notas clínicas, identifica diagnósticos faltantes y destaca la gravedad CC/MCC definida por los CMS y su impacto en el reembolso.",
+    projSonaice: "Infraestructura computacional híbrida impulsada por GPU de NVIDIA.",
+    projLea: "Asistente chatbot de IA para uso local en ordenadores y dispositivos móviles, para mejorar la formación en enfermería y la alfabetización tecnológica.",
+    projMde: "Una solución para aumentar la interoperabilidad de los datos de salud entre FHIR y OMOP mediante la creación de un conjunto de Master Data Elements (MDE).",
+    projHeartly: "Prototipos de dispositivos médicos para el seguimiento de pacientes pediátricos con síndrome del corazón izquierdo hipoplásico (HLHS).",
+    projWieny: "App para pasear perros que promueve la salud y el bienestar a través de la movilidad, registrando calorías y distancia con GPS.",
+    projBookshelf: "Sitio web para guardar los libros que se leen en pareja o en grupo, donde puedes valorar los libros y destacar tus citas favoritas."
   },
   ko: {
     navAbout: "소개",
@@ -268,6 +313,15 @@ const translations = {
     stackEngineering:
       "<strong>엔지니어링:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>클라우드/제품:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
+    navProjects: "프로젝트",
+    projectsTitle: "프로젝트",
+    projCdi: "Palantir AIP 기반으로 임상 노트에서 ICD-10 코드와 DRG를 부여하고, 누락된 진단을 찾아내며, CMS가 정의한 CC/MCC 중증도와 보험 상환 영향을 표시합니다.",
+    projSonaice: "NVIDIA GPU 기반의 하이브리드 컴퓨팅 인프라.",
+    projLea: "데스크톱과 모바일 기기에서 로컬로 실행되는 AI 챗봇 어시스턴트로, 간호 교육과 기술 활용 능력을 높입니다.",
+    projMde: "마스터 데이터 요소(MDE) 세트를 만들어 FHIR와 OMOP 간 의료 데이터의 상호운용성을 높이는 솔루션.",
+    projHeartly: "좌심형성부전증후군(HLHS) 소아 환자를 모니터링하기 위한 의료기기 프로토타입.",
+    projWieny: "이동을 통해 건강과 웰빙을 증진하고, GPS로 칼로리와 거리를 기록하는 반려견 산책 앱.",
+    projBookshelf: "커플이나 그룹이 함께 읽는 책을 기록하고, 책을 평가하며 좋아하는 구절을 하이라이트할 수 있는 웹사이트."
   },
   zh: {
     navAbout: "简介",
@@ -313,6 +367,15 @@ const translations = {
     stackEngineering:
       "<strong>工程:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、Docker、GitHub。",
     stackCloud: "<strong>云/产品:</strong> AWS、Azure、Google Cloud、Jira、Figma。",
+    navProjects: "项目",
+    projectsTitle: "项目",
+    projCdi: "基于 Palantir AIP，从临床记录中分配 ICD-10 编码和 DRG，识别遗漏的诊断，并突出显示 CMS 定义的 CC/MCC 严重程度及其对报销的影响。",
+    projSonaice: "由 NVIDIA GPU 驱动的混合计算基础设施。",
+    projLea: "可在桌面和移动设备上本地部署的 AI 聊天助手，用于加强护理教育和技术素养。",
+    projMde: "通过创建主数据元素（MDE）集，提升 FHIR 与 OMOP 之间健康数据互操作性的解决方案。",
+    projHeartly: "用于监测左心发育不良综合征（HLHS）患儿的医疗设备原型。",
+    projWieny: "一款遛狗应用，通过运动促进健康与福祉，并用 GPS 记录卡路里和距离。",
+    projBookshelf: "为情侣和读书小组记录共读书籍的网站，可以为书评分并标注最喜欢的书中语句。"
   },
   ja: {
     navAbout: "紹介",
@@ -358,6 +421,15 @@ const translations = {
     stackEngineering:
       "<strong>エンジニアリング:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、Docker、GitHub。",
     stackCloud: "<strong>クラウド/プロダクト:</strong> AWS、Azure、Google Cloud、Jira、Figma。",
+    navProjects: "プロジェクト",
+    projectsTitle: "プロジェクト",
+    projCdi: "Palantir AIPを基盤に、臨床記録からICD-10コードとDRGを割り当て、見落とされた診断を特定し、CMSが定めるCC/MCCの重症度と診療報酬への影響を示します。",
+    projSonaice: "NVIDIA GPUを搭載したハイブリッド計算インフラ。",
+    projLea: "デスクトップやモバイル端末でローカルに動作するAIチャットボットアシスタントで、看護教育とテクノロジーリテラシーの向上を目指します。",
+    projMde: "マスターデータ要素（MDE）セットを作成し、FHIRとOMOP間の医療データの相互運用性を高めるソリューション。",
+    projHeartly: "左心低形成症候群（HLHS）の小児患者をモニタリングするための医療機器プロトタイプ。",
+    projWieny: "運動を通じて健康とウェルビーイングを促進し、GPSでカロリーと距離を記録する犬の散歩アプリ。",
+    projBookshelf: "カップルやグループで読んでいる本を記録し、本を評価したり、お気に入りの一節をハイライトしたりできるウェブサイト。"
   }
 };
 

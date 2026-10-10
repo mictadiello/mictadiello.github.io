@@ -304,6 +304,51 @@ main:has(.home) {
   color: var(--text);
 }
 
+/* Projects: icon tile beside name and description */
+.projects {
+  --tile: 5rem;
+}
+
+.projects li {
+  display: grid;
+  grid-template-columns: var(--tile) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 1.75rem);
+  align-items: start;
+}
+
+.projects p {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  color: var(--text);
+}
+
+/* Every icon and logo fills ~70% of its tile on its longest side */
+.project-icon {
+  display: grid;
+  place-items: center;
+  width: var(--tile);
+  height: var(--tile);
+  color: var(--bg);
+  background: #ffffff;
+}
+
+/* Line art spans ~83% of the 24px viewBox, so 84% of the tile ≈ 70% drawn */
+.project-icon svg {
+  width: calc(var(--tile) * 0.84);
+  height: calc(var(--tile) * 0.84);
+}
+
+.project-icon img {
+  width: calc(var(--tile) * 0.7);
+  height: calc(var(--tile) * 0.7);
+  object-fit: contain;
+}
+
+@media (max-width: 40rem) {
+  .projects {
+    --tile: 3.5rem;
+  }
+}
+
 .aside {
   margin: 4.5rem 0 0;
   font-size: 0.9rem;
