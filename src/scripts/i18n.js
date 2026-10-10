@@ -21,7 +21,7 @@ const translations = {
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
     roleOneFact: "Head of Product",
-    roleDuke: "Fellow, Design Health Program",
+    roleDuke: "Product Design",
     roleVerona: "Registered Nurse",
     descHackensack:
       "Build clinical data pipelines and executive dashboards for healthcare operations, translating complex performance signals into decisions for clinical leaders.",
@@ -66,7 +66,7 @@ const translations = {
     roleHackensack: "Ingegnere di informatica clinica",
     roleColumbia: "Senior Informatics Specialist",
     roleOneFact: "Head of Product",
-    roleDuke: "Fellow, Design Health Program",
+    roleDuke: "Product design",
     roleVerona: "Infermiere",
     descHackensack:
       "Costruisco pipeline di dati clinici e dashboard executive per le operations sanitarie, trasformando segnali complessi in decisioni per leader clinici.",
@@ -111,7 +111,7 @@ const translations = {
     roleHackensack: "Ingénieur en informatique clinique",
     roleColumbia: "Spécialiste senior en informatique",
     roleOneFact: "Responsable produit",
-    roleDuke: "Fellow, Design Health Program",
+    roleDuke: "Design produit",
     roleVerona: "Infirmier diplômé",
     descHackensack:
       "Je construis des pipelines de données cliniques et des tableaux de bord exécutifs pour les opérations de santé, afin de transformer des signaux complexes en décisions.",
@@ -156,7 +156,7 @@ const translations = {
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
     roleOneFact: "Head of Product",
-    roleDuke: "Fellow, Design Health Program",
+    roleDuke: "Produktdesign",
     roleVerona: "Examinierter Krankenpfleger",
     descHackensack:
       "Ich entwickle klinische Datenpipelines und Executive Dashboards für Healthcare Operations und übersetze komplexe Leistungssignale in Entscheidungen für klinische Führungskräfte.",
@@ -201,7 +201,7 @@ const translations = {
     roleHackensack: "Ingeniero de informática clínica",
     roleColumbia: "Especialista senior en informática",
     roleOneFact: "Responsable de producto",
-    roleDuke: "Fellow, Design Health Program",
+    roleDuke: "Diseño de producto",
     roleVerona: "Enfermero registrado",
     descHackensack:
       "Construyo pipelines de datos clínicos y dashboards ejecutivos para operaciones sanitarias, traduciendo señales complejas en decisiones para líderes clínicos.",
@@ -246,7 +246,7 @@ const translations = {
     roleHackensack: "임상 정보학 엔지니어",
     roleColumbia: "시니어 정보학 스페셜리스트",
     roleOneFact: "제품 총괄",
-    roleDuke: "Design Health Program 펠로우",
+    roleDuke: "제품 디자인",
     roleVerona: "등록 간호사",
     descHackensack:
       "의료 운영을 위한 임상 데이터 파이프라인과 임원용 대시보드를 구축하며, 복잡한 성과 신호를 임상 리더의 의사결정으로 연결합니다.",
@@ -291,7 +291,7 @@ const translations = {
     roleHackensack: "临床信息学工程师",
     roleColumbia: "高级信息学专家",
     roleOneFact: "产品负责人",
-    roleDuke: "Design Health Program 研究员",
+    roleDuke: "产品设计",
     roleVerona: "注册护士",
     descHackensack:
       "构建面向医疗运营的临床数据管道和高管仪表盘，将复杂的绩效信号转化为临床领导者可用的决策依据。",
@@ -336,7 +336,7 @@ const translations = {
     roleHackensack: "臨床情報学エンジニア",
     roleColumbia: "シニア情報学スペシャリスト",
     roleOneFact: "プロダクト責任者",
-    roleDuke: "Design Health Program フェロー",
+    roleDuke: "プロダクトデザイン",
     roleVerona: "登録看護師",
     descHackensack:
       "医療オペレーション向けの臨床データパイプラインと経営層向けダッシュボードを構築し、複雑な指標を臨床リーダーの意思決定につなげています。",
