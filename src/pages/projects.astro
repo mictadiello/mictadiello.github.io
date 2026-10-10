@@ -1,8 +1,5 @@
 ---
-import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
-import wieny from "../assets/projects/wieny.jpg";
-import heartly from "../assets/projects/heartly.webp";
 
 // One line-icon style for every project: 24×24, stroked in currentColor
 const icons = {
@@ -10,6 +7,11 @@ const icons = {
   chip: `<rect x="7" y="7" width="10" height="10" rx="1"/><rect x="10" y="10" width="4" height="4"/><path d="M9.5 3v4M14.5 3v4M9.5 17v4M14.5 17v4M3 9.5h4M3 14.5h4M17 9.5h4M17 14.5h4"/>`,
   chat: `<path d="M4 3.5h16a1 1 0 0 1 1 1v11.5a1 1 0 0 1-1 1h-9.5l-4.5 4v-4H4a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1z"/><path d="M8 10.25h.01M12 10.25h.01M16 10.25h.01" stroke-width="3"/>`,
   exchange: `<rect x="3" y="3.5" width="7" height="7" rx="1"/><rect x="14" y="13.5" width="7" height="7" rx="1"/><path d="M10 7h5a2 2 0 0 1 2 2v4.5M15 11.5l2 2 2-2"/><path d="M14 17H9a2 2 0 0 1-2-2v-4.5M5 12.5l2-2 2 2"/>`,
+  // Traced from the Heartly logo: half-open heart ending in a checkmark
+  heartCheck: `<g transform="translate(12 12) scale(1.125) translate(-12 -12)"><path d="M5.75 4.5C7.15 4.5 8.35 5.2 9.25 6.2C10.25 5 11.65 4 13.25 4C16.05 4 18.25 6.2 18.25 9C18.25 10.4 17.65 11.6 16.75 12.5L9.25 20L5.75 16.5"/></g>`,
+  // Traced from the Wieny logo's dog head: raised snout with nose dot, closed eye,
+  // one upright and one floppy ear (head only, so it stays legible at icon size)
+  wieny: `<g transform="translate(12 12) scale(1.9) translate(-11.82 -6.55)"><path d="M7.8 4.4L11.6 5Q14.6 5.3 15 7.6Q15 10.2 12.3 10.4L9.4 8.9Z"/><path d="M8.6 6.6L10.9 7.6"/><path d="M11.6 7Q12.4 7.9 13.2 7"/><path d="M13.4 5.2Q14.6 1.6 15.7 1.9Q16.3 3.9 15 6.2"/><path d="M15 7Q17 8.2 16.4 11.2Q15.2 11.6 14.4 9.6"/><circle cx="7.6" cy="4.2" r="0.5"/></g>`,
 };
 
 const projects = [
@@ -44,15 +46,13 @@ const projects = [
     name: "Heartly: Infant Monitoring Health System",
     key: "projHeartly",
     href: "https://drive.google.com/file/d/1VoltNlJKetsFXCU_9JorBWGbMvL5e5Ax/view?usp=drive_link",
-    logo: heartly,
-    // Badge matches the logo's own background so no rectangle shows
-    badge: "#e0ecf8",
+    icon: "heartCheck",
     desc: "Medical device prototypes focused on tracking pediatric patients with Hypoplastic Left Heart Syndrome (HLHS).",
   },
   {
     name: "Wieny",
     key: "projWieny",
-    logo: wieny,
+    icon: "wieny",
     desc: "Dog walking app to promote health and wellbeing through mobility, tracking calories and distance with GPS.",
   },
 ];
@@ -62,31 +62,20 @@ const projects = [
   <h1 class="sr-only" data-i18n="projectsTitle">Projects</h1>
   <ul class="entries projects">
     {
-      projects.map(({ name, key, href, icon, logo, badge, desc }) => (
+      projects.map(({ name, key, href, icon, desc }) => (
         <li>
-          {logo ? (
-            <Image
-              class:list={["project-icon", "project-logo", { wide: logo.width > logo.height }]}
-              style={badge && `background: ${badge}`}
-              src={logo}
-              alt=""
-              widths={[56, 112]}
-              sizes="3.5rem"
-            />
-          ) : (
-            <svg
-              class="project-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <Fragment set:html={icons[icon]} />
-            </svg>
-          )}
+          <svg
+            class="project-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <Fragment set:html={icons[icon]} />
+          </svg>
           <div>
             <h2>
               {href ? (

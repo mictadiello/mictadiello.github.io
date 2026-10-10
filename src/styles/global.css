@@ -152,7 +152,7 @@ main:has(.home) {
   padding: 0;
 }
 
-/* Home: title and focus lines across the full width */
+/* Home: title and focus lines across the full width, centred on screen */
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -162,7 +162,23 @@ main:has(.home) {
   padding: 2.25rem 0;
 }
 
+/* Data-stream animation fills the whole screen behind the home text */
+.data-streams {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .home-text {
+  position: relative;
+  z-index: 1;
+  /* Soft halo in the page colour keeps text readable over the streams */
+  text-shadow:
+    0 0 6px var(--bg),
+    0 0 18px var(--bg),
+    0 0 36px var(--bg);
   flex: 1 1 26rem;
   min-width: 0;
   display: flex;
@@ -347,17 +363,7 @@ main:has(.home) {
   vector-effect: non-scaling-stroke;
 }
 
-/* A real logo shows as a round white badge in the same box */
-.project-logo {
-  border-radius: 50%;
-  background: #ffffff;
-  object-fit: contain;
-}
 
-/* Wide banners get a margin so their corners stay inside the circle */
-.project-logo.wide {
-  padding: 0.3rem;
-}
 
 @media (max-width: 40rem) {
   .projects {

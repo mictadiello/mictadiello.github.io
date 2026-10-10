@@ -1,0 +1,177 @@
+---
+// Home background: horizontal data lanes across the whole page, drawn in from
+// the left on load, with packets of data flowing along them.
+---
+
+<canvas class="data-streams" aria-hidden="true"></canvas>
+
+<script>
+  const canvas = document.querySelector<HTMLCanvasElement>(".data-streams");
+  const ctx = canvas?.getContext("2d");
+
+  if (canvas && ctx) {
+    const LANE_GAP = 13; // px between lanes
+    const PACKETS = 6; // per lane
+    const SPECKS = 12; // static dots per lane
+    const INTRO = 2200; // ms for the lanes to draw in
+    const COLORS = ["#eaf4ff", "#6ecdff", "#3aa0ff", "#9fb6ff", "#7ee0c3"];
+    const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    type Lane = {
+      y: number;
+      color: string;
+      from: number; // where the lane's line starts / ends, as shares of the width
+      to: number;
+      specks: { at: number; r: number }[];
+      packets: { at: number; speed: number; r: number; tail: number; white: boolean }[];
+    };
+
+    const lines = document.createElement("canvas");
+    const lctx = lines.getContext("2d")!;
+    let lanes: Lane[] = [];
+    let w = 0;
+    let h = 0;
+    let dpr = 1;
+    let start = 0;
+
+    const smooth = (s: number) => s * s * (3 - 2 * s);
+
+    // One pre-drawn fading tail per colour, stamped for every packet; making a
+    // fresh gradient per packet per frame stalls the GPU canvas (~1 fps)
+    const tails = new Map<string, HTMLCanvasElement>();
+    const tailSprite = (color: string) => {
+      let sprite = tails.get(color);
+      if (!sprite) {
+        sprite = document.createElement("canvas");
+        sprite.width = 64;
+        sprite.height = 2;
+        const sctx = sprite.getContext("2d")!;
+        const grad = sctx.createLinearGradient(0, 0, 64, 0);
+        grad.addColorStop(0, `${color}00`);
+        grad.addColorStop(1, color);
+        sctx.fillStyle = grad;
+        sctx.fillRect(0, 0, 64, 2);
+        tails.set(color, sprite);
+      }
+      return sprite;
+    };
+    // How visible a lane is at x: fades in over its start, out over its end
+    const envelope = (lane: Lane, x: number) => {
+      const fadeIn = (x - lane.from * w) / (w * 0.12);
+      const fadeOut = (lane.to * w - x) / (w * 0.22);
+      return Math.max(0, Math.min(1, fadeIn, fadeOut));
+    };
+
+    const makeLane = (y: number, i: number): Lane => {
+      const from = -0.15 + Math.random() * 0.45;
+      return {
+        y,
+        color: COLORS[i % 7 === 3 ? 4 : i % 4],
+        from,
+        to: Math.min(1.15, from + 0.55 + Math.random() * 0.5),
+        specks: Array.from({ length: SPECKS }, () => ({ at: Math.random(), r: 0.6 + Math.random() * 1.2 })),
+        packets: Array.from({ length: PACKETS }, () => ({
+          at: Math.random(),
+          speed: 50 + Math.random() * 110,
+          r: 1.1 + Math.random() * 1.6,
+          tail: 8 + Math.random() * 26,
+          white: Math.random() < 0.25,
+        })),
+      };
+    };
+
+    const build = () => {
+      dpr = Math.min(devicePixelRatio || 1, 2);
+      w = canvas.clientWidth;
+      h = canvas.clientHeight;
+      for (const c of [canvas, lines]) {
+        c.width = w * dpr;
+        c.height = h * dpr;
+      }
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      lctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      // Keep existing lanes on resize (same picture), add more if the screen grew
+      const count = Math.ceil(h / LANE_GAP);
+      while (lanes.length < count) lanes.push(makeLane(0, lanes.length));
+      lanes.length = count;
+      lanes.forEach((lane, i) => (lane.y = LANE_GAP / 2 + i * LANE_GAP));
+
+      // Static lanes and specks are drawn once per size
+      lctx.clearRect(0, 0, w, h);
+      lctx.lineWidth = 1;
+      for (const lane of lanes) {
+        const x0 = lane.from * w;
+        const x1 = lane.to * w;
+        const grad = lctx.createLinearGradient(x0, 0, x1, 0);
+        grad.addColorStop(0, `${lane.color}00`);
+        grad.addColorStop(0.18, lane.color);
+        grad.addColorStop(0.65, lane.color);
+        grad.addColorStop(1, `${lane.color}00`);
+        lctx.strokeStyle = grad;
+        lctx.globalAlpha = 0.2;
+        lctx.beginPath();
+        lctx.moveTo(x0, lane.y);
+        lctx.lineTo(x1, lane.y);
+        lctx.stroke();
+
+        lctx.fillStyle = lane.color;
+        for (const sp of lane.specks) {
+          const x = x0 + sp.at * (x1 - x0);
+          lctx.globalAlpha = 0.45 * envelope(lane, x);
+          lctx.beginPath();
+          lctx.arc(x, lane.y, sp.r, 0, Math.PI * 2);
+          lctx.fill();
+        }
+      }
+      lctx.globalAlpha = 1;
+    };
+
+    const draw = (now: number) => {
+      const elapsed = reduceMotion ? INTRO : now - start;
+      const shown = w * smooth(Math.min(1, elapsed / INTRO)); // intro: lanes draw in from the left
+      ctx.clearRect(0, 0, w, h);
+      if (shown > 0) ctx.drawImage(lines, 0, 0, shown * dpr, h * dpr, 0, 0, shown, h);
+
+      // Packets with short tails flow left to right, visible only along their lane
+      ctx.globalCompositeOperation = "lighter";
+      const span = w + 80;
+      for (const lane of lanes) {
+        for (const p of lane.packets) {
+          const x = ((p.at * span + (reduceMotion ? 0 : (elapsed / 1000) * p.speed)) % span) - 40;
+          if (x > shown) continue;
+          const a = envelope(lane, x);
+          if (a <= 0) continue;
+          const color = p.white ? "#ffffff" : lane.color;
+          ctx.globalAlpha = 0.5 * a;
+          ctx.drawImage(tailSprite(color), x - p.tail, lane.y - 0.5, p.tail, 1);
+          ctx.globalAlpha = 0.9 * a;
+          ctx.fillStyle = color;
+          ctx.beginPath();
+          ctx.arc(x, lane.y, p.r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      ctx.globalAlpha = 1;
+      ctx.globalCompositeOperation = "source-over";
+    };
+
+    build();
+    new ResizeObserver(() => {
+      build();
+      if (reduceMotion) draw(0);
+    }).observe(canvas);
+
+    if (reduceMotion) {
+      draw(0);
+    } else {
+      // requestAnimationFrame pauses on its own while the tab is hidden
+      const frame = (now: number) => {
+        if (!start) start = now;
+        draw(now);
+        requestAnimationFrame(frame);
+      };
+      requestAnimationFrame(frame);
+    }
+  }
+</script>
