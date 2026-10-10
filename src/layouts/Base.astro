@@ -40,6 +40,16 @@ const nav = [
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="site-name" href="/">Michele Tadiello</a>
+      <select id="language-select" class="language-select" aria-label="Language">
+        <option value="en">English</option>
+        <option value="it">Italiano</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="ko">한국어</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+      </select>
       <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span>
       </button>
@@ -59,16 +69,6 @@ const nav = [
     </main>
     <footer class="site-footer">
       <span>© <span id="year">{new Date().getFullYear()}</span> Michele Tadiello</span>
-      <select id="language-select" class="language-select" aria-label="Language">
-        <option value="en">English</option>
-        <option value="it">Italiano</option>
-        <option value="fr">Français</option>
-        <option value="de">Deutsch</option>
-        <option value="es">Español</option>
-        <option value="ko">한국어</option>
-        <option value="zh">中文</option>
-        <option value="ja">日本語</option>
-      </select>
     </footer>
     <script>
       const btn = document.querySelector(".menu-btn");

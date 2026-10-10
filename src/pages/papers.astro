@@ -1,52 +1,41 @@
 ---
 import Base from "../layouts/Base.astro";
 
-// Authors are trusted HTML written here; <strong> marks Michele.
-const papers = [
-  {
-    title:
-      "Assessing the quality and performance of synthetic data augmentation to identify stigmatizing language in obstetric clinical notes",
-    href: "https://doi.org/10.1016/j.outlook.2026.102757",
-    venue: "Nursing Outlook",
-    year: 2026,
-    authors:
-      "Jihye Kim Scroggins, Veronica Barcelona, Ismael I. Hulchafo, Sarah E. Harkins, Zhihong Zhang, Danielle Scharp, Kenrick Cato, Hans Moen, <strong>Michele Tadiello</strong>, Maxim Topaz",
-  },
-  {
-    title: "Stigmatizing and positive language in birth clinical notes associated with race and ethnicity",
-    href: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2833892",
-    venue: "JAMA Network Open",
-    year: 2025,
-    authors:
-      "Ismael Ibrahim Hulchafo, Jihye Kim Scroggins, Sarah E. Harkins, Hans Moen, <strong>Michele Tadiello</strong>, Kenrick Cato, Anahita Davoudi, Dena Goffman, Janice James Aubey, Coretta Green, Maxim Topaz, Veronica Barcelona",
-  },
-  {
-    title:
-      "Identifying stigmatizing and positive/preferred language in obstetric clinical notes using natural language processing",
-    href: "https://academic.oup.com/jamia/article-abstract/32/2/308/7906099",
-    venue: "Journal of the American Medical Informatics Association",
-    year: 2025,
-    authors:
-      "Jihye Kim Scroggins, Ismael I. Hulchafo, Sarah Harkins, Danielle Scharp, Hans Moen, Anahita Davoudi, Kenrick Cato, <strong>Michele Tadiello</strong>, Maxim Topaz, Veronica Barcelona",
-  },
-  {
-    title:
-      "Toward equitable documentation: Evaluating ChatGPT's role in identifying and rephrasing stigmatizing language in electronic health records",
-    href: "https://doi.org/10.1016/j.outlook.2025.102472",
-    venue: "Nursing Outlook",
-    year: 2025,
-    authors:
-      "Zhihong Zhang, Jihye Kim Scroggins, Sarah Harkins, Ismael Ibrahim Hulchafo, Hans Moen, <strong>Michele Tadiello</strong>, Veronica Barcelona, Maxim Topaz",
-  },
-  {
-    title:
-      "Expanding the OMOP Common Data Model in accord with federal rules for hospital price transparency and transparency in coverage",
-    href: "https://www.ohdsi.org/wp-content/uploads/2023/10/altosaar-jaan_payless-health-common-data-model_2023symposium-Jaan-Altosaar-Li.pdf",
-    venue: "OHDSI Global Symposium",
-    year: 2023,
-    authors: "Jacob S. Zelko, Jaan Altosaar Li, <strong>Michele Tadiello</strong>",
-  },
-];
+// Google Scholar has no API, so papers come from OpenAlex at build time
+// (every deploy, plus the weekly scheduled rebuild in deploy.yml).
+const AUTHOR = "A5114742858";
+const TOP = 5;
+
+const res = await fetch(
+  `https://api.openalex.org/works?filter=author.id:${AUTHOR}&per_page=100&select=id,title,doi,publication_year,cited_by_count,primary_location,authorships`,
+);
+// Failing the build keeps the last good deploy live instead of shipping an empty page.
+if (!res.ok) throw new Error(`OpenAlex request failed: ${res.status}`);
+const { results } = await res.json();
+
+const seenTitles = new Set();
+const papers = results
+  // Skip university-repository copies of papers published in a journal
+  .filter((w) => w.primary_location?.source?.type !== "repository")
+  .sort((a, b) => b.cited_by_count - a.cited_by_count || b.publication_year - a.publication_year)
+  .filter((w) => {
+    const key = w.title.toLowerCase().replace(/[^a-z0-9]/g, "");
+    if (seenTitles.has(key)) return false;
+    seenTitles.add(key);
+    return true;
+  })
+  .slice(0, TOP)
+  .map((w) => ({
+    title: w.title,
+    href: w.doi ?? w.primary_location?.landing_page_url ?? w.id,
+    venue: w.primary_location?.source?.display_name,
+    year: w.publication_year,
+    authors: w.authorships.map((a) => ({
+      name: a.author.display_name,
+      me: a.author.id.endsWith(AUTHOR),
+    })),
+  }));
+if (papers.length === 0) throw new Error("OpenAlex returned no publications");
 ---
 
 <Base title="Publications">
@@ -59,14 +48,27 @@ const papers = [
             <a href={href}>{title}</a>
           </h2>
           <p>
-            <Fragment set:html={authors} />. <cite>{venue}</cite>, {year}.
+            {authors.map((a, i) => (
+              <>
+                {i > 0 && ", "}
+                {a.me ? <strong>{a.name}</strong> : a.name}
+              </>
+            ))}
+            . {venue && <cite>{venue}</cite>}
+            {venue && ", "}
+            {year}.
           </p>
         </li>
       ))
     }
   </ul>
   <p class="aside">
-    <a href="https://scholar.google.com/citations?user=yyzWSssAAAAJ" data-i18n="scholarLink">
+    <a
+      class="scholar-btn"
+      href="https://scholar.google.com/citations?user=yyzWSssAAAAJ"
+      rel="noopener"
+      data-i18n="scholarLink"
+    >
       View all publications on Google Scholar
     </a>
   </p>

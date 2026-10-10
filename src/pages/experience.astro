@@ -2,41 +2,11 @@
 import Base from "../layouts/Base.astro";
 
 const roles = [
-  {
-    org: "Hackensack University Medical Center",
-    key: "roleHackensack",
-    role: "Clinical Informatics Engineer",
-    descKey: "descHackensack",
-    desc: "Build clinical data pipelines and executive dashboards for healthcare operations, translating complex performance signals into decisions for clinical leaders.",
-  },
-  {
-    org: "Columbia University Irving Medical Center",
-    key: "roleColumbia",
-    role: "Senior Informatics Specialist",
-    descKey: "descColumbia",
-    desc: "Developed clinical AI infrastructure for research teams, including a Clinical Data Navigator, LLM/RAG assistants, GPU workflows, open-source AI, and tools for searching large clinical content collections.",
-  },
-  {
-    org: "One Fact Foundation",
-    key: "roleOneFact",
-    role: "Chief Digital Officer",
-    descKey: "descOneFact",
-    desc: "Led healthcare cost transparency and claims analytics work, including public dashboards, open-source analysis, and OMOP CDM expansion for price transparency.",
-  },
-  {
-    org: "Duke University",
-    key: "roleDuke",
-    role: "Fellow, Design Health Program",
-    descKey: "descDuke",
-    desc: "Worked at the intersection of clinical insight, design, entrepreneurship, and health innovation through Duke's Design Health program.",
-  },
-  {
-    org: "University Hospital of Verona",
-    key: "roleVerona",
-    role: "Registered Nurse",
-    descKey: "descVerona",
-    desc: "Began in direct clinical care, building the frontline perspective that now shapes my approach to healthcare technology and AI adoption.",
-  },
+  { org: "Hackensack University Medical Center", key: "roleHackensack", role: "Clinical Informatics Engineer" },
+  { org: "Columbia University Irving Medical Center", key: "roleColumbia", role: "Senior Informatics Specialist" },
+  { org: "One Fact Foundation", key: "roleOneFact", role: "Chief Digital Officer" },
+  { org: "Duke University", key: "roleDuke", role: "Fellow, Design Health Program" },
+  { org: "University Hospital of Verona", key: "roleVerona", role: "Registered Nurse" },
 ];
 ---
 
@@ -44,11 +14,10 @@ const roles = [
   <h1 class="sr-only" data-i18n="experienceTitle">Professional Experience</h1>
   <ul class="entries">
     {
-      roles.map(({ org, key, role, descKey, desc }) => (
+      roles.map(({ org, key, role }) => (
         <li>
           <h2>{org}</h2>
           <p data-i18n={key}>{role}</p>
-          <p class="desc" data-i18n={descKey}>{desc}</p>
         </li>
       ))
     }

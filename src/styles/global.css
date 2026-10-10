@@ -175,12 +175,6 @@ main:has(.home) {
   font-weight: 700;
 }
 
-.intro {
-  max-width: 38rem;
-  margin: 0;
-  font-size: 1.2rem;
-}
-
 .home-portrait {
   flex: 1 1 16rem;
   max-width: 26rem;
@@ -305,10 +299,6 @@ main:has(.home) {
   color: var(--muted);
 }
 
-.entries .desc {
-  color: var(--text);
-}
-
 .entries p strong {
   font-weight: 600;
   color: var(--text);
@@ -318,6 +308,21 @@ main:has(.home) {
   margin: 4.5rem 0 0;
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+.scholar-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0 1.1rem;
+  color: var(--bg);
+  background: var(--accent);
+  font-family: var(--font-display);
+  text-decoration: none;
+}
+
+.scholar-btn:hover {
+  background: var(--text);
 }
 
 .site-footer {
@@ -332,8 +337,17 @@ main:has(.home) {
   color: var(--muted);
 }
 
+.site-nav {
+  margin-left: auto;
+}
+
+/* Language picker sits at the end of the header strip */
 .language-select {
+  order: 1;
+  margin-left: 1rem;
   font: inherit;
+  font-size: 0.85rem;
+  text-transform: none;
   color: var(--text);
   background: var(--field);
   border: 1px solid var(--line);
@@ -404,12 +418,9 @@ main:has(.home) {
     display: none;
   }
 
-  .portrait {
-    float: none;
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-    margin: 0 0 1.5rem;
+  /* Stays visible next to the menu button */
+  .language-select {
+    order: 0;
+    margin: 0 0.5rem 0 auto;
   }
 }
