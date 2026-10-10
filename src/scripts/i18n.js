@@ -3,22 +3,20 @@ const translations = {
     navAbout: "about",
     navExperience: "experience",
     navPublications: "publications",
-    navStack: "stack",
     navEmail: "email",
-    eyebrow: "Healthcare AI + Clinical Informatics",
-    heroTitle: "Applying AI solutions to enhance healthcare",
+    heroTitle: "I make clinical data flow and AI work in real care settings",
     heroFocus: "Clinical Informatics<br />Healthcare AI<br />Venture Health Tech",
     aboutTitle: "About",
     aboutLead:
-      "My work sits at the intersection of clinical informatics, healthcare AI, and digital health innovation. I have multi-year experience building AI infrastructure, clinical data systems, and strategic partnerships across academic medical centers, startups, and healthcare organizations.",
-    aboutAdvisory:
-      "I advise leaders on AI/ML implementation, healthcare operations, venture strategy, and the practical adoption of emerging technologies in clinical settings. My work also focuses on healthcare affordability, financial toxicity, and data-driven decision-making for patients and health systems.",
-    aboutInfrastructure:
-      "I have developed financial models and analytics tools designed to reduce financial toxicity while supporting better operational and clinical decisions. I also built an AI agent for clinical content retrieval to help nurses access trusted information more efficiently.",
-    aboutPublications:
-      "My research and writing have appeared in peer-reviewed journals including JAMA Network Open and JAMIA, as well as in newspaper articles on the role of artificial intelligence in healthcare.",
+      "I help health systems and health-tech companies adopt AI and digital health technologies, and use clinical and operational data to find bottlenecks and turn analytics into decisions. I advise on AI/ML implementation, interoperability (OMOP, FHIR, HL7), and putting new tools to work in clinical settings.",
+    aboutColumbia:
+      "At Columbia University Medical Center, I developed an AI teaching assistant for nursing students and architected a hybrid computational infrastructure that supports researchers’ computational work, including work with large language models.",
+    aboutPast:
+      "In previous lives I was a nurse, a business partner in a home care delivery clinic, and later worked at a university medical center during the Covid pandemic.",
     aboutEducation:
-      "I hold a Master's degree of Management in Clinical Informatics from Duke University School of Medicine and a Bachelor of Nursing from the University of Verona School of Medicine.",
+      "I hold a Master of Management in Clinical Informatics from Duke University School of Medicine, with a certificate in Innovation and Entrepreneurship, and a Bachelor of Nursing from the University of Verona.",
+    aboutPersonal:
+      "I’m Italian, and outside of work I love football, books, and jazz. I’m also a geek for ancient Japanese and Korean architecture, a passion that comes from my technical high school diploma in civil engineering technology and architecture.",
     experienceTitle: "Professional Experience",
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
@@ -51,22 +49,20 @@ const translations = {
     navAbout: "profilo",
     navExperience: "esperienza",
     navPublications: "pubblicazioni",
-    navStack: "stack",
     navEmail: "email",
-    eyebrow: "IA sanitaria + Informatica clinica",
-    heroTitle: "Utilizzo soluzioni di IA per migliorare la sanità",
+    heroTitle: "Faccio fluire i dati clinici e funzionare l'IA nei contesti di cura reali",
     heroFocus: "Informatica clinica<br />IA sanitaria<br />Venture Health Tech",
     aboutTitle: "Profilo",
     aboutLead:
-      "Il mio lavoro si colloca all'intersezione tra informatica clinica, IA sanitaria e innovazione della salute digitale. Ho un'esperienza pluriennale nella costruzione di infrastrutture di IA, sistemi di dati clinici e partnership strategiche in centri medici accademici, startup e organizzazioni sanitarie.",
-    aboutAdvisory:
-      "Fornisco consulenza a leader su implementazione di AI/ML, operations sanitarie, strategia venture e adozione pratica di tecnologie emergenti in contesti clinici. Il mio lavoro si concentra anche su accessibilità economica delle cure, tossicità finanziaria e decisioni basate sui dati per pazienti e sistemi sanitari.",
-    aboutInfrastructure:
-      "Ho sviluppato modelli finanziari e strumenti di analytics pensati per ridurre la tossicità finanziaria, supportando al contempo migliori decisioni operative e cliniche. Ho inoltre costruito un agente IA per il recupero di contenuti clinici, per aiutare gli infermieri ad accedere in modo più efficiente a informazioni affidabili.",
-    aboutPublications:
-      "Le mie ricerche e i miei scritti sono apparsi su riviste peer-reviewed tra cui JAMA Network Open e JAMIA, oltre che in articoli di giornale sul ruolo dell'intelligenza artificiale in sanità.",
+      "Aiuto sistemi sanitari e aziende health-tech ad adottare l'IA e le tecnologie di sanità digitale, e a usare i dati clinici e operativi per individuare i colli di bottiglia e trasformare le analisi in decisioni. Offro consulenza su implementazione di IA/ML, interoperabilità (OMOP, FHIR, HL7) e introduzione di nuovi strumenti nei contesti clinici.",
+    aboutColumbia:
+      "Al Columbia University Medical Center ho sviluppato un assistente didattico basato sull'IA per gli studenti di infermieristica e ho progettato un'infrastruttura computazionale ibrida che supporta il lavoro computazionale dei ricercatori, compreso quello con i modelli linguistici di grandi dimensioni.",
+    aboutPast:
+      "In vite precedenti sono stato infermiere e socio di un ambulatorio di assistenza domiciliare, e in seguito ho lavorato in un centro medico universitario durante la pandemia di Covid.",
     aboutEducation:
-      "Ho ottenuto un Master in Management in Informatica Clinica presso Duke University School of Medicine e una laurea in Infermieristica presso l'Università degli Studi di Verona.",
+      "Ho conseguito un Master of Management in Clinical Informatics presso la Duke University School of Medicine, con un certificato in Innovation and Entrepreneurship, e una laurea in Infermieristica presso l'Università di Verona.",
+    aboutPersonal:
+      "Sono italiano e, fuori dal lavoro, amo il calcio, i libri e il jazz. Sono anche un appassionato di architettura antica giapponese e coreana, una passione che nasce dal mio diploma di geometra.",
     experienceTitle: "Esperienza professionale",
     roleHackensack: "Ingegnere di informatica clinica",
     roleColumbia: "Senior Informatics Specialist",
@@ -80,7 +76,7 @@ const translations = {
     descOneFact:
       "Ho guidato lavori su trasparenza dei costi sanitari e claims analytics, inclusi dashboard pubblici, analisi open-source ed espansione OMOP CDM.",
     descDuke:
-      "Ho lavorato all'intersezione tra insight clinico, design, imprenditorialita e innovazione sanitaria nel Design Health program di Duke.",
+      "Ho lavorato all'intersezione tra insight clinico, design, imprenditorialità e innovazione sanitaria nel Design Health program di Duke.",
     descVerona:
       "Ho iniziato nell'assistenza clinica diretta, costruendo la prospettiva di prima linea che oggi guida il mio approccio alla tecnologia sanitaria e all'adozione dell'IA.",
     publicationsTitle: "Pubblicazioni",
@@ -97,49 +93,47 @@ const translations = {
   },
   fr: {
     navAbout: "profil",
-    navExperience: "experience",
+    navExperience: "expérience",
     navPublications: "publications",
-    navStack: "stack",
     navEmail: "email",
-    eyebrow: "IA en sante + Informatique clinique",
-    heroTitle: "Appliquer des solutions d'IA pour ameliorer la sante",
-    heroFocus: "Informatique clinique<br />IA en sante<br />Venture Health Tech",
+    heroTitle: "Je fais circuler les données cliniques et fonctionner l'IA dans les vrais lieux de soins",
+    heroFocus: "Informatique clinique<br />IA en santé<br />Venture Health Tech",
     aboutTitle: "Profil",
     aboutLead:
-      "Mon travail se situe a l'intersection de l'informatique clinique, de l'IA en sante et de l'innovation en sante numerique. J'ai une experience pluriannuelle dans la construction d'infrastructures d'IA, de systemes de donnees cliniques et de partenariats strategiques au sein de centres medicaux academiques, de startups et d'organisations de sante.",
-    aboutAdvisory:
-      "Je conseille des dirigeants sur l'implementation de l'AI/ML, les operations de sante, la strategie venture et l'adoption pratique des technologies emergentes en contexte clinique. Mon travail porte aussi sur l'accessibilite financiere des soins, la toxicite financiere et la prise de decision fondee sur les donnees pour les patients et les systemes de sante.",
-    aboutInfrastructure:
-      "J'ai developpe des modeles financiers et des outils d'analytique concus pour reduire la toxicite financiere tout en soutenant de meilleures decisions operationnelles et cliniques. J'ai egalement construit un agent IA de recherche de contenu clinique pour aider les infirmiers a acceder plus efficacement a des informations fiables.",
-    aboutPublications:
-      "Mes recherches et mes ecrits ont paru dans des revues relues par les pairs, dont JAMA Network Open et JAMIA, ainsi que dans des articles de presse sur le role de l'intelligence artificielle en sante.",
+      "J'aide les systèmes de santé et les entreprises de la health tech à adopter l'IA et les technologies de santé numérique, et à utiliser les données cliniques et opérationnelles pour repérer les goulots d'étranglement et transformer l'analyse en décisions. Je conseille sur la mise en œuvre de l'IA/ML, l'interopérabilité (OMOP, FHIR, HL7) et l'intégration de nouveaux outils en milieu clinique.",
+    aboutColumbia:
+      "Au Columbia University Medical Center, j'ai développé un assistant pédagogique fondé sur l'IA pour les étudiants en soins infirmiers et conçu une infrastructure de calcul hybride qui soutient le travail computationnel des chercheurs, y compris avec de grands modèles de langage.",
+    aboutPast:
+      "Dans des vies antérieures, j'ai été infirmier et associé d'une clinique de soins à domicile, puis j'ai travaillé dans un centre médical universitaire pendant la pandémie de Covid.",
     aboutEducation:
-      "Je suis titulaire d'un master en management en informatique clinique de Duke University School of Medicine et d'un bachelor en sciences infirmieres de University of Verona School of Medicine.",
-    experienceTitle: "Experience professionnelle",
-    roleHackensack: "Ingenieur en informatique clinique",
-    roleColumbia: "Specialiste senior en informatique",
+      "Je suis titulaire d'un Master of Management in Clinical Informatics de la Duke University School of Medicine, avec un certificat en innovation et entrepreneuriat, et d'une licence en sciences infirmières de l'Université de Vérone.",
+    aboutPersonal:
+      "Je suis italien et, en dehors du travail, j'aime le football, les livres et le jazz. Je suis aussi passionné d'architecture ancienne japonaise et coréenne, une passion qui vient de mon baccalauréat technique en génie civil et architecture.",
+    experienceTitle: "Expérience professionnelle",
+    roleHackensack: "Ingénieur en informatique clinique",
+    roleColumbia: "Spécialiste senior en informatique",
     roleOneFact: "Chief Digital Officer",
     roleDuke: "Fellow, Design Health Program",
-    roleVerona: "Infirmier diplome",
+    roleVerona: "Infirmier diplômé",
     descHackensack:
-      "Je construis des pipelines de donnees cliniques et des tableaux de bord executifs pour les operations de sante, afin de transformer des signaux complexes en decisions.",
+      "Je construis des pipelines de données cliniques et des tableaux de bord exécutifs pour les opérations de santé, afin de transformer des signaux complexes en décisions.",
     descColumbia:
-      "J'ai developpe une infrastructure d'IA clinique pour des equipes de recherche, avec Clinical Data Navigator, assistants LLM/RAG, workflows GPU, open-source AI et outils de recherche dans de grands corpus cliniques.",
+      "J'ai développé une infrastructure d'IA clinique pour des équipes de recherche, avec Clinical Data Navigator, assistants LLM/RAG, workflows GPU, open-source AI et outils de recherche dans de grands corpus cliniques.",
     descOneFact:
-      "J'ai dirige des travaux de transparence des couts de sante et d'analyse de claims, avec tableaux de bord publics, analyses open-source et extension OMOP CDM.",
+      "J'ai dirigé des travaux de transparence des coûts de santé et d'analyse de claims, avec tableaux de bord publics, analyses open-source et extension OMOP CDM.",
     descDuke:
-      "J'ai travaille a l'intersection de l'expertise clinique, du design, de l'entrepreneuriat et de l'innovation en sante dans le programme Design Health de Duke.",
+      "J'ai travaillé à l'intersection de l'expertise clinique, du design, de l'entrepreneuriat et de l'innovation en santé dans le programme Design Health de Duke.",
     descVerona:
-      "J'ai commence dans les soins cliniques directs, une perspective de terrain qui guide aujourd'hui mon approche de la technologie et de l'IA en sante.",
+      "J'ai commencé dans les soins cliniques directs, une perspective de terrain qui guide aujourd'hui mon approche de la technologie et de l'IA en santé.",
     publicationsTitle: "Publications",
     scholarLink: "Voir toutes les publications sur Google Scholar",
     stackTitle: "Stack",
     stackInformatics:
-      "<strong>Informatique &amp; IA/ML :</strong> systemes NLP/LLM, modelisation predictive, architecture RAG, analytique clinique, donnees EHR (Epic Clarity), FHIR/HL7, OMOP CDM.",
+      "<strong>Informatique &amp; IA/ML :</strong> systèmes NLP/LLM, modélisation prédictive, architecture RAG, analytique clinique, données EHR (Epic Clarity), FHIR/HL7, OMOP CDM.",
     stackData:
-      "<strong>Donnees :</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
+      "<strong>Données :</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
     stackEngineering:
-      "<strong>Ingenierie :</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
+      "<strong>Ingénierie :</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Produit :</strong> AWS, Azure, Google Cloud, Jira, Figma.",
     contactTitle: "Contact"
   },
@@ -147,22 +141,20 @@ const translations = {
     navAbout: "profil",
     navExperience: "erfahrung",
     navPublications: "publikationen",
-    navStack: "stack",
     navEmail: "email",
-    eyebrow: "Healthcare AI + Klinische Informatik",
-    heroTitle: "KI-Loesungen einsetzen, um Gesundheitsversorgung zu verbessern",
+    heroTitle: "Ich bringe klinische Daten in Fluss und KI in der echten Versorgung zum Laufen",
     heroFocus: "Klinische Informatik<br />Healthcare AI<br />Venture Health Tech",
     aboutTitle: "Profil",
     aboutLead:
-      "Meine Arbeit liegt an der Schnittstelle von klinischer Informatik, Healthcare AI und digitaler Gesundheitsinnovation. Ich habe mehrjaehrige Erfahrung im Aufbau von KI-Infrastruktur, klinischen Datensystemen und strategischen Partnerschaften in akademischen medizinischen Zentren, Startups und Gesundheitsorganisationen.",
-    aboutAdvisory:
-      "Ich berate Fuehrungskraefte zur Implementierung von AI/ML, zu Healthcare Operations, zur Venture-Strategie und zur praktischen Einfuehrung neuer Technologien im klinischen Umfeld. Mein Schwerpunkt liegt zudem auf Bezahlbarkeit der Versorgung, finanzieller Toxizitaet und datengestuetzter Entscheidungsfindung fuer Patienten und Gesundheitssysteme.",
-    aboutInfrastructure:
-      "Ich habe Finanzmodelle und Analyse-Tools entwickelt, die finanzielle Toxizitaet reduzieren und zugleich bessere operative und klinische Entscheidungen unterstuetzen. Ausserdem habe ich einen KI-Agenten zur Suche klinischer Inhalte entwickelt, damit Pflegekraefte effizienter auf verlaessliche Informationen zugreifen koennen.",
-    aboutPublications:
-      "Meine Forschung und meine Texte sind in peer-reviewten Fachzeitschriften wie JAMA Network Open und JAMIA erschienen sowie in Zeitungsartikeln ueber die Rolle kuenstlicher Intelligenz im Gesundheitswesen.",
+      "Ich unterstütze Gesundheitssysteme und Health-Tech-Unternehmen dabei, KI und digitale Gesundheitstechnologien einzuführen und klinische und operative Daten zu nutzen, um Engpässe zu finden und Analysen in Entscheidungen zu übersetzen. Ich berate zur Implementierung von KI/ML, zur Interoperabilität (OMOP, FHIR, HL7) und zum Einsatz neuer Werkzeuge im klinischen Alltag.",
+    aboutColumbia:
+      "Am Columbia University Medical Center habe ich einen KI-Lehrassistenten für Pflegestudierende entwickelt und eine hybride Recheninfrastruktur konzipiert, die die rechenintensive Arbeit von Forschenden unterstützt, auch mit großen Sprachmodellen.",
+    aboutPast:
+      "In früheren Leben war ich Krankenpfleger und Geschäftspartner einer Klinik für häusliche Pflege und arbeitete später während der Covid-Pandemie an einem Universitätsklinikum.",
     aboutEducation:
-      "Ich habe einen Masterabschluss in Management in Clinical Informatics von der Duke University School of Medicine und einen Bachelor in Nursing von der University of Verona School of Medicine.",
+      "Ich habe einen Master of Management in Clinical Informatics der Duke University School of Medicine mit einem Zertifikat in Innovation and Entrepreneurship sowie einen Bachelor in Pflege der Universität Verona.",
+    aboutPersonal:
+      "Ich bin Italiener und liebe außerhalb der Arbeit Fußball, Bücher und Jazz. Außerdem begeistere ich mich für alte japanische und koreanische Architektur – eine Leidenschaft, die aus meinem Abschluss an einer technischen Oberschule für Bautechnik und Architektur stammt.",
     experienceTitle: "Berufserfahrung",
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
@@ -170,20 +162,20 @@ const translations = {
     roleDuke: "Fellow, Design Health Program",
     roleVerona: "Examinierter Krankenpfleger",
     descHackensack:
-      "Ich entwickle klinische Datenpipelines und Executive Dashboards fuer Healthcare Operations und uebersetze komplexe Leistungssignale in Entscheidungen fuer klinische Fuehrungskraefte.",
+      "Ich entwickle klinische Datenpipelines und Executive Dashboards für Healthcare Operations und übersetze komplexe Leistungssignale in Entscheidungen für klinische Führungskräfte.",
     descColumbia:
-      "Ich entwickelte klinische KI-Infrastruktur fuer Forschungsteams, darunter Clinical Data Navigator, LLM/RAG-Assistenten, GPU-Workflows, Open-Source-AI und Werkzeuge zur Suche in grossen klinischen Inhaltsbestaenden.",
+      "Ich entwickelte klinische KI-Infrastruktur für Forschungsteams, darunter Clinical Data Navigator, LLM/RAG-Assistenten, GPU-Workflows, Open-Source-AI und Werkzeuge zur Suche in großen klinischen Inhaltsbeständen.",
     descOneFact:
-      "Ich leitete Arbeiten zu Kostentransparenz und Claims Analytics im Gesundheitswesen, darunter oeffentliche Dashboards, Open-Source-Analysen und OMOP-CDM-Erweiterung.",
+      "Ich leitete Arbeiten zu Kostentransparenz und Claims Analytics im Gesundheitswesen, darunter öffentliche Dashboards, Open-Source-Analysen und OMOP-CDM-Erweiterung.",
     descDuke:
       "Ich arbeitete im Duke Design Health program an der Schnittstelle von klinischer Perspektive, Design, Unternehmertum und Gesundheitsinnovation.",
     descVerona:
-      "Ich begann in der direkten klinischen Versorgung; diese Frontline-Perspektive praegt heute meinen Ansatz fuer Gesundheitstechnologie und KI-Adoption.",
+      "Ich begann in der direkten klinischen Versorgung; diese Frontline-Perspektive prägt heute meinen Ansatz für Gesundheitstechnologie und KI-Adoption.",
     publicationsTitle: "Publikationen",
     scholarLink: "Alle Publikationen auf Google Scholar ansehen",
     stackTitle: "Stack",
     stackInformatics:
-      "<strong>Informatik &amp; AI/ML:</strong> NLP/LLM-Systeme, praediktive Modellierung, RAG-Architektur, klinische Analytik, EHR-Daten (Epic Clarity), FHIR/HL7, OMOP CDM.",
+      "<strong>Informatik &amp; AI/ML:</strong> NLP/LLM-Systeme, prädiktive Modellierung, RAG-Architektur, klinische Analytik, EHR-Daten (Epic Clarity), FHIR/HL7, OMOP CDM.",
     stackData:
       "<strong>Daten:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
     stackEngineering:
@@ -195,47 +187,45 @@ const translations = {
     navAbout: "perfil",
     navExperience: "experiencia",
     navPublications: "publicaciones",
-    navStack: "stack",
     navEmail: "email",
-    eyebrow: "IA en salud + Informatica clinica",
-    heroTitle: "Aplicando soluciones de IA para mejorar la atencion sanitaria",
-    heroFocus: "Informatica clinica<br />IA en salud<br />Venture Health Tech",
+    heroTitle: "Hago que los datos clínicos fluyan y que la IA funcione en entornos de atención reales",
+    heroFocus: "Informática clínica<br />IA en salud<br />Venture Health Tech",
     aboutTitle: "Perfil",
     aboutLead:
-      "Mi trabajo se situa en la interseccion entre informatica clinica, IA en salud e innovacion en salud digital. Tengo experiencia plurianual construyendo infraestructura de IA, sistemas de datos clinicos y alianzas estrategicas en centros medicos academicos, startups y organizaciones sanitarias.",
-    aboutAdvisory:
-      "Asesoro a lideres en implementacion de AI/ML, operaciones sanitarias, estrategia venture y la adopcion practica de tecnologias emergentes en entornos clinicos. Mi trabajo tambien se centra en la accesibilidad economica de la atencion, la toxicidad financiera y la toma de decisiones basada en datos para pacientes y sistemas de salud.",
-    aboutInfrastructure:
-      "He desarrollado modelos financieros y herramientas de analitica disenados para reducir la toxicidad financiera y, al mismo tiempo, apoyar mejores decisiones operativas y clinicas. Tambien construi un agente de IA para recuperacion de contenido clinico que ayuda a los enfermeros a acceder de forma mas eficiente a informacion confiable.",
-    aboutPublications:
-      "Mis investigaciones y escritos han aparecido en revistas revisadas por pares como JAMA Network Open y JAMIA, asi como en articulos de prensa sobre el papel de la inteligencia artificial en la salud.",
+      "Ayudo a sistemas de salud y empresas de tecnología sanitaria a adoptar la IA y las tecnologías de salud digital, y a usar datos clínicos y operativos para detectar cuellos de botella y convertir la analítica en decisiones. Asesoro en la implementación de IA/ML, la interoperabilidad (OMOP, FHIR, HL7) y la puesta en marcha de nuevas herramientas en entornos clínicos.",
+    aboutColumbia:
+      "En el Columbia University Medical Center desarrollé un asistente docente basado en IA para estudiantes de enfermería y diseñé una infraestructura computacional híbrida que apoya el trabajo computacional de los investigadores, incluido el trabajo con grandes modelos de lenguaje.",
+    aboutPast:
+      "En vidas anteriores fui enfermero y socio de una clínica de atención domiciliaria, y más tarde trabajé en un centro médico universitario durante la pandemia de Covid.",
     aboutEducation:
-      "Tengo una maestria en Management in Clinical Informatics de Duke University School of Medicine y una licenciatura en Enfermeria de University of Verona School of Medicine.",
+      "Tengo un Master of Management in Clinical Informatics de Duke University School of Medicine, con un certificado en Innovación y Emprendimiento, y una licenciatura en Enfermería de la Universidad de Verona.",
+    aboutPersonal:
+      "Soy italiano y, fuera del trabajo, me encantan el fútbol, los libros y el jazz. También soy un apasionado de la arquitectura antigua japonesa y coreana, una pasión que viene de mi bachillerato técnico en construcción civil y arquitectura.",
     experienceTitle: "Experiencia profesional",
-    roleHackensack: "Ingeniero de informatica clinica",
-    roleColumbia: "Especialista senior en informatica",
+    roleHackensack: "Ingeniero de informática clínica",
+    roleColumbia: "Especialista senior en informática",
     roleOneFact: "Chief Digital Officer",
     roleDuke: "Fellow, Design Health Program",
     roleVerona: "Enfermero registrado",
     descHackensack:
-      "Construyo pipelines de datos clinicos y dashboards ejecutivos para operaciones sanitarias, traduciendo senales complejas en decisiones para lideres clinicos.",
+      "Construyo pipelines de datos clínicos y dashboards ejecutivos para operaciones sanitarias, traduciendo señales complejas en decisiones para líderes clínicos.",
     descColumbia:
-      "Desarrolle infraestructura de IA clinica para equipos de investigacion, incluidos Clinical Data Navigator, asistentes LLM/RAG, flujos GPU, open-source AI y herramientas para buscar grandes colecciones clinicas.",
+      "Desarrollé infraestructura de IA clínica para equipos de investigación, incluidos Clinical Data Navigator, asistentes LLM/RAG, flujos GPU, open-source AI y herramientas para buscar grandes colecciones clínicas.",
     descOneFact:
-      "Lidere trabajos de transparencia de costos sanitarios y analitica de claims, incluidos dashboards publicos, analisis open-source y expansion de OMOP CDM.",
+      "Lideré trabajos de transparencia de costos sanitarios y analítica de claims, incluidos dashboards públicos, análisis open-source y expansión de OMOP CDM.",
     descDuke:
-      "Trabaje en la interseccion de insight clinico, diseno, emprendimiento e innovacion en salud dentro del Design Health program de Duke.",
+      "Trabajé en la intersección de insight clínico, diseño, emprendimiento e innovación en salud dentro del Design Health program de Duke.",
     descVerona:
-      "Comence en atencion clinica directa, construyendo la perspectiva de primera linea que hoy guia mi enfoque de tecnologia sanitaria e IA.",
+      "Comencé en atención clínica directa, construyendo la perspectiva de primera línea que hoy guía mi enfoque de tecnología sanitaria e IA.",
     publicationsTitle: "Publicaciones",
     scholarLink: "Ver todas las publicaciones en Google Scholar",
     stackTitle: "Stack",
     stackInformatics:
-      "<strong>Informatica &amp; AI/ML:</strong> sistemas NLP/LLM, modelado predictivo, arquitectura RAG, analitica clinica, datos EHR (Epic Clarity), FHIR/HL7, OMOP CDM.",
+      "<strong>Informática &amp; AI/ML:</strong> sistemas NLP/LLM, modelado predictivo, arquitectura RAG, analítica clínica, datos EHR (Epic Clarity), FHIR/HL7, OMOP CDM.",
     stackData:
       "<strong>Datos:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.",
     stackEngineering:
-      "<strong>Ingenieria:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
+      "<strong>Ingeniería:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Producto:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
     contactTitle: "Contacto"
   },
@@ -243,22 +233,20 @@ const translations = {
     navAbout: "소개",
     navExperience: "경력",
     navPublications: "출판물",
-    navStack: "스택",
     navEmail: "이메일",
-    eyebrow: "헬스케어 AI + 임상 정보학",
-    heroTitle: "의료를 향상시키는 AI 솔루션을 적용합니다",
+    heroTitle: "임상 데이터가 흐르고 AI가 실제 진료 현장에서 작동하도록 만듭니다",
     heroFocus: "임상 정보학<br />헬스케어 AI<br />벤처 헬스테크",
     aboutTitle: "소개",
     aboutLead:
-      "제 일은 임상 정보학, 헬스케어 AI, 디지털 헬스 혁신의 교차점에 있습니다. 학술 의료기관, 스타트업, 의료 조직 전반에서 AI 인프라, 임상 데이터 시스템, 전략적 파트너십을 구축해 온 다년간의 경험을 가지고 있습니다.",
-    aboutAdvisory:
-      "저는 AI/ML 도입, 헬스케어 운영, 벤처 전략, 그리고 임상 현장에서의 신기술의 실질적 채택에 관해 리더들에게 자문합니다. 또한 의료 접근성, 재정적 독성(financial toxicity), 그리고 환자와 헬스 시스템을 위한 데이터 기반 의사결정에 중점을 둡니다.",
-    aboutInfrastructure:
-      "저는 재정적 독성을 줄이는 동시에 더 나은 운영·임상 의사결정을 지원하도록 설계된 재무 모델과 분석 도구를 개발했습니다. 또한 간호사가 신뢰할 수 있는 정보에 더 효율적으로 접근할 수 있도록 임상 콘텐츠 검색 AI 에이전트를 구축했습니다.",
-    aboutPublications:
-      "제 연구와 글은 JAMA Network Open과 JAMIA를 포함한 동료심사 저널은 물론, 의료에서 인공지능의 역할에 관한 신문 기사에도 실렸습니다.",
+      "저는 의료 시스템과 헬스테크 기업이 AI와 디지털 헬스 기술을 도입하고, 임상 및 운영 데이터를 활용해 병목을 찾아 분석을 의사결정으로 연결하도록 돕습니다. AI/ML 도입, 상호운용성(OMOP, FHIR, HL7), 그리고 새로운 도구를 임상 현장에 적용하는 일에 대해 자문합니다.",
+    aboutColumbia:
+      "Columbia University Medical Center에서 간호학생을 위한 AI 교육 보조 도구를 개발했고, 대규모 언어 모델 작업을 포함해 연구자들의 계산 작업을 지원하는 하이브리드 컴퓨팅 인프라를 설계했습니다.",
+    aboutPast:
+      "이전에는 간호사였고 가정 간호 클리닉의 사업 파트너였으며, 이후 코로나19 팬데믹 기간에 대학 의료센터에서 일했습니다.",
     aboutEducation:
-      "Duke University School of Medicine에서 Clinical Informatics Management 석사 학위를, University of Verona School of Medicine에서 간호학 학사 학위를 받았습니다.",
+      "Duke University School of Medicine에서 혁신 및 창업 수료증과 함께 Clinical Informatics 경영학 석사(Master of Management) 학위를, University of Verona에서 간호학 학사 학위를 받았습니다.",
+    aboutPersonal:
+      "저는 이탈리아인이며, 일 밖에서는 축구, 책, 재즈를 좋아합니다. 또한 고대 일본과 한국 건축에 푹 빠져 있는데, 이 열정은 토목·건축 기술을 공부한 기술고등학교 시절에서 비롯되었습니다.",
     experienceTitle: "전문 경력",
     roleHackensack: "임상 정보학 엔지니어",
     roleColumbia: "시니어 정보학 스페셜리스트",
@@ -291,22 +279,20 @@ const translations = {
     navAbout: "简介",
     navExperience: "经历",
     navPublications: "出版物",
-    navStack: "技术栈",
     navEmail: "邮箱",
-    eyebrow: "医疗 AI + 临床信息学",
-    heroTitle: "应用 AI 解决方案提升医疗服务",
+    heroTitle: "我让临床数据顺畅流动，让 AI 在真实的医疗场景中发挥作用",
     heroFocus: "临床信息学<br />医疗 AI<br />医疗科技创业",
     aboutTitle: "简介",
     aboutLead:
-      "我的工作处于临床信息学、医疗 AI 与数字健康创新的交叉点。我拥有多年在学术医疗中心、初创公司和医疗机构构建 AI 基础设施、临床数据系统及战略合作关系的经验。",
-    aboutAdvisory:
-      "我为领导者提供关于 AI/ML 落地、医疗运营、风投战略以及新兴技术在临床场景中实际应用的咨询。我的工作也关注医疗可负担性、财务毒性（financial toxicity），以及面向患者和医疗系统的数据驱动决策。",
-    aboutInfrastructure:
-      "我开发了财务模型和分析工具，旨在减轻财务毒性，同时支持更好的运营和临床决策。我还构建了一个用于临床内容检索的 AI 代理，帮助护士更高效地获取可信信息。",
-    aboutPublications:
-      "我的研究与文章发表于同行评审期刊，包括 JAMA Network Open 和 JAMIA，也见于探讨人工智能在医疗中作用的新闻报道。",
+      "我帮助医疗系统和医疗科技公司采用 AI 与数字健康技术，并利用临床和运营数据找出瓶颈，将分析转化为决策。我就 AI/ML 落地、互操作性（OMOP、FHIR、HL7）以及在临床环境中应用新工具提供咨询。",
+    aboutColumbia:
+      "在 Columbia University Medical Center，我为护理学生开发了一个 AI 教学助手，并设计了一套混合计算基础设施，支持研究人员的计算工作，包括大语言模型相关工作。",
+    aboutPast:
+      "在过去的经历中，我曾是一名护士，也曾是一家居家护理诊所的合伙人，后来在新冠疫情期间于一家大学医学中心工作。",
     aboutEducation:
-      "我拥有 Duke University School of Medicine 的 Clinical Informatics Management 硕士学位，以及 University of Verona School of Medicine 的护理学学士学位。",
+      "我拥有 Duke University School of Medicine 的临床信息学管理硕士学位（Master of Management in Clinical Informatics）及创新与创业证书，并拥有 University of Verona 的护理学学士学位。",
+    aboutPersonal:
+      "我是意大利人，工作之余热爱足球、读书和爵士乐。我还痴迷于古代日本和韩国建筑，这份热情源自我在技术高中学习土木工程技术与建筑的经历。",
     experienceTitle: "专业经历",
     roleHackensack: "临床信息学工程师",
     roleColumbia: "高级信息学专家",
@@ -339,22 +325,20 @@ const translations = {
     navAbout: "紹介",
     navExperience: "経歴",
     navPublications: "出版物",
-    navStack: "スタック",
     navEmail: "メール",
-    eyebrow: "ヘルスケアAI + 臨床情報学",
-    heroTitle: "医療を向上させるAIソリューションを実装します",
+    heroTitle: "臨床データを流れるようにし、AIを実際の医療現場で機能させます",
     heroFocus: "臨床情報学<br />ヘルスケアAI<br />ベンチャーヘルステック",
     aboutTitle: "紹介",
     aboutLead:
-      "私の仕事は、臨床情報学、ヘルスケアAI、デジタルヘルスのイノベーションが交わる領域にあります。学術医療センター、スタートアップ、医療機関にわたり、AIインフラ、臨床データシステム、戦略的パートナーシップを構築してきた多年の経験があります。",
-    aboutAdvisory:
-      "私はAI/MLの実装、ヘルスケア運営、ベンチャー戦略、そして臨床現場における新技術の実践的な導入について、リーダーに助言しています。また、医療のアクセス性、財務毒性（financial toxicity）、患者と医療システムのためのデータ駆動型の意思決定にも注力しています。",
-    aboutInfrastructure:
-      "私は、財務毒性を軽減しつつ、より良い運営上・臨床上の意思決定を支援するための財務モデルと分析ツールを開発しました。さらに、看護師が信頼できる情報により効率的にアクセスできるよう、臨床コンテンツ検索のためのAIエージェントを構築しました。",
-    aboutPublications:
-      "私の研究と執筆は、JAMA Network OpenやJAMIAを含む査読付き学術誌に加え、医療における人工知能の役割についての新聞記事にも掲載されています。",
+      "私は、医療機関やヘルステック企業がAIやデジタルヘルス技術を導入し、臨床・運営データを活用してボトルネックを見つけ、分析を意思決定につなげられるよう支援しています。AI/MLの実装、相互運用性（OMOP、FHIR、HL7）、そして新しいツールを臨床現場で活用することについて助言しています。",
+    aboutColumbia:
+      "Columbia University Medical Centerでは、看護学生向けのAI教育アシスタントを開発し、大規模言語モデルを用いた作業を含む研究者の計算業務を支えるハイブリッドな計算インフラを設計しました。",
+    aboutPast:
+      "以前は看護師として働き、在宅ケアクリニックの共同経営者を務め、その後コロナ禍の大学医療センターで勤務しました。",
     aboutEducation:
-      "Duke University School of MedicineでClinical Informatics Managementの修士号を、University of Verona School of Medicineで看護学士号を取得しています。",
+      "Duke University School of MedicineでClinical InformaticsのMaster of Management（イノベーションと起業の修了証付き）を、University of Veronaで看護学の学士号を取得しています。",
+    aboutPersonal:
+      "私はイタリア出身で、仕事以外ではサッカー、読書、ジャズが大好きです。また、日本と韓国の古建築にも夢中で、その情熱は土木・建築技術を学んだ技術高校に由来しています。",
     experienceTitle: "職務経歴",
     roleHackensack: "臨床情報学エンジニア",
     roleColumbia: "シニア情報学スペシャリスト",
@@ -421,9 +405,20 @@ function setLanguage(language) {
 
   languageSelect.value = activeLanguage;
 
-  localStorage.setItem("siteLanguage", activeLanguage);
+  try {
+    localStorage.setItem("siteLanguage", activeLanguage);
+  } catch {
+    // Storage blocked (private mode, cookies off): language just isn't remembered.
+  }
 }
 
 languageSelect.addEventListener("change", () => setLanguage(languageSelect.value));
 
-setLanguage(localStorage.getItem("siteLanguage") || "en");
+let savedLanguage = null;
+try {
+  savedLanguage = localStorage.getItem("siteLanguage");
+} catch {}
+setLanguage(savedLanguage || "en");
+
+// Footer year is baked in at build time; keep it current between deploys.
+document.querySelector("#year").textContent = new Date().getFullYear();

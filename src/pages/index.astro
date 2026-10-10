@@ -1,17 +1,35 @@
 ---
+import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
+import portrait from "../assets/picture.jpg";
 ---
 
 <Base>
   <div class="home">
-    <h1 data-i18n="heroTitle">Applying AI solutions to enhance healthcare</h1>
-    <p class="lede" data-i18n-html="heroFocus">
-      Clinical Informatics<br />Healthcare AI<br />Venture Health Tech
-    </p>
-    <p class="lede">
-      <a class="cta" href="mailto:mictadiello@gmail.com" data-i18n="navEmail">email</a>
-      &nbsp;<a href="https://www.linkedin.com/in/michele-tadiello" rel="noopener">linkedin</a>
-      &nbsp;<a href="https://github.com/mictadiello" rel="noopener">github</a>
-    </p>
+    <div class="home-text">
+      <h1 data-i18n="heroTitle">I make clinical data flow and AI work in real care settings</h1>
+      <p class="intro" data-i18n="aboutLead">
+        I help health systems and health-tech companies adopt AI and digital health technologies,
+        and use clinical and operational data to find bottlenecks and turn analytics into decisions.
+        I advise on AI/ML implementation, interoperability (OMOP, FHIR, HL7), and putting new tools
+        to work in clinical settings.
+      </p>
+      <p class="lede" data-i18n-html="heroFocus">
+        Clinical Informatics<br />Healthcare AI<br />Venture Health Tech
+      </p>
+      <p class="lede">
+        <a class="cta" href="mailto:mictadiello@gmail.com" data-i18n="navEmail">email</a>
+        &nbsp;<a href="https://www.linkedin.com/in/michele-tadiello" rel="noopener">linkedin</a>
+        &nbsp;<a href="https://github.com/mictadiello" rel="noopener">github</a>
+      </p>
+    </div>
+    <Image
+      class="home-portrait"
+      src={portrait}
+      alt="Michele Tadiello in Central Park"
+      widths={[400, 800]}
+      sizes="(min-width: 56rem) 22rem, 100vw"
+      loading="eager"
+    />
   </div>
 </Base>

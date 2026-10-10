@@ -1,45 +1,34 @@
 ---
-import { Image } from "astro:assets";
 import Base from "../layouts/Base.astro";
-import portrait from "../assets/picture.jpg";
 ---
 
 <Base title="About">
   <h1 data-i18n="aboutTitle">About</h1>
   <div class="prose">
-    <Image
-      class="portrait"
-      src={portrait}
-      alt="Michele Tadiello in Central Park"
-      widths={[320, 640]}
-      sizes="20rem"
-      loading="eager"
-    />
     <p data-i18n="aboutLead">
-      My work sits at the intersection of clinical informatics, healthcare AI, and digital health
-      innovation. I have multi-year experience building AI infrastructure, clinical data systems,
-      and strategic partnerships across academic medical centers, startups, and healthcare
-      organizations.
+      I help health systems and health-tech companies adopt AI and digital health technologies,
+      and use clinical and operational data to find bottlenecks and turn analytics into decisions.
+      I advise on AI/ML implementation, interoperability (OMOP, FHIR, HL7), and putting new tools
+      to work in clinical settings.
     </p>
-    <p data-i18n="aboutAdvisory">
-      I advise leaders on AI/ML implementation, healthcare operations, venture strategy, and the
-      practical adoption of emerging technologies in clinical settings. My work also focuses on
-      healthcare affordability, financial toxicity, and data-driven decision-making for patients
-      and health systems.
+    <p data-i18n="aboutColumbia">
+      At Columbia University Medical Center, I developed an AI teaching assistant for nursing
+      students and architected a hybrid computational infrastructure that supports researchers’
+      computational work, including work with large language models.
     </p>
-    <p data-i18n="aboutInfrastructure">
-      I have developed financial models and analytics tools designed to reduce financial toxicity
-      while supporting better operational and clinical decisions. I also built an AI agent for
-      clinical content retrieval to help nurses access trusted information more efficiently.
-    </p>
-    <p data-i18n="aboutPublications">
-      My research and writing have appeared in peer-reviewed journals including JAMA Network Open
-      and JAMIA, as well as in newspaper articles on the role of artificial intelligence in
-      healthcare.
+    <p data-i18n="aboutPast">
+      In previous lives I was a nurse, a business partner in a home care delivery clinic, and later
+      worked at a university medical center during the Covid pandemic.
     </p>
     <p data-i18n="aboutEducation">
-      I hold a Master's degree of Management in Clinical Informatics from Duke University School
-      of Medicine and a Bachelor of Nursing from the University of Verona School of Medicine.
+      I hold a Master of Management in Clinical Informatics from Duke University School of
+      Medicine, with a certificate in Innovation and Entrepreneurship, and a Bachelor of Nursing
+      from the University of Verona.
+    </p>
+    <p data-i18n="aboutPersonal">
+      I’m Italian, and outside of work I love football, books, and jazz. I’m also a geek for
+      ancient Japanese and Korean architecture, a passion that comes from my technical high school
+      diploma in civil engineering technology and architecture.
     </p>
 
     <h2 data-i18n="stackTitle">Stack</h2>

@@ -9,7 +9,7 @@ const { title } = Astro.props;
 const siteTitle = "Michele Tadiello | Healthcare AI and Informatics";
 const pageTitle = title ? `${title} | Michele Tadiello` : siteTitle;
 const description =
-  "Michele Tadiello applies AI solutions to enhance healthcare through clinical informatics, data strategy, and healthcare operations.";
+  "Michele Tadiello makes clinical data flow and AI work in real care settings, through clinical informatics, healthcare AI, and health-tech advisory.";
 const ogImage = new URL((await getImage({ src: portrait, width: 1200 })).src, Astro.site);
 
 const path = Astro.url.pathname.replace(/\/$/, "");
@@ -34,7 +34,7 @@ const nav = [
     <meta property="og:type" content="website" />
     <meta property="og:image" content={ogImage} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#061d73" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -63,7 +63,7 @@ const nav = [
     <main id="main">
       <slot />
     </main>
-    <footer class="site-footer">© {new Date().getFullYear()} Michele Tadiello</footer>
+    <footer class="site-footer">© <span id="year">{new Date().getFullYear()}</span> Michele Tadiello</footer>
     <script src="../scripts/i18n.js"></script>
   </body>
 </html>

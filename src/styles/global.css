@@ -1,10 +1,10 @@
 :root {
-  --bg: #000;
-  --text: #e2e2e2;
-  --muted: #9a9a96;
-  --line: #3d3d3d;
-  --field: #292929;
-  --accent: #24cb71;
+  --bg: #061d73;
+  --text: #ffffff;
+  --muted: #c3cbe6;
+  --line: #5b6fb8;
+  --field: #0f2b8c;
+  --accent: #eaf4ff;
   --font-display: "Inter Variable", system-ui, sans-serif;
   --font-body: "Source Serif 4 Variable", Georgia, serif;
   --edge: clamp(1.25rem, 5vw, 3rem);
@@ -126,17 +126,39 @@ h1 {
   margin-bottom: clamp(2rem, 7vw, 3rem);
 }
 
-/* Home */
+/* Home: intro beside the portrait, stacking on narrow screens */
 .home {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(2rem, 6vw, 3.5rem);
   min-height: 60svh;
 }
 
+.home-text {
+  flex: 1 1 26rem;
+  min-width: 0;
+}
+
 .home h1 {
-  font-size: clamp(2.5rem, 11vw, 6rem);
-  margin-bottom: 2rem;
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  max-width: 34rem;
+  margin: 0 0 2rem;
+  font-size: 1.15rem;
+}
+
+.home-portrait {
+  flex: 1 1 16rem;
+  max-width: 22rem;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 58% center;
 }
 
 .lede {
@@ -149,13 +171,13 @@ h1 {
 /* The one loud element: a highlighter-style link */
 .cta {
   padding: 0 0.1em;
-  color: #000;
+  color: var(--bg);
   background: var(--accent);
   text-decoration: none;
 }
 
 .cta:hover {
-  color: #000;
+  color: var(--bg);
   background: var(--text);
 }
 
@@ -174,13 +196,6 @@ h1 {
 
 .prose strong {
   font-weight: 600;
-}
-
-.portrait {
-  width: min(100%, 20rem);
-  height: auto;
-  margin-bottom: 2rem;
-  filter: grayscale(1);
 }
 
 .links {
@@ -217,6 +232,10 @@ h1 {
   margin: 0.6rem 0 0;
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+.entries .desc {
+  color: var(--text);
 }
 
 .entries p strong {
