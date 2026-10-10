@@ -4,8 +4,8 @@ const translations = {
     navExperience: "experience",
     navPublications: "publications",
     navEmail: "email",
-    heroTitle: "I make clinical data flow and AI work in real care settings",
-    heroFocus: "Clinical Informatics<br />Healthcare AI<br />Venture Health Tech",
+    heroTitle: "I get clinical data flowing and AI working where care happens",
+    heroFocus: "Clinical Informatics<br />Healthcare AI<br />Strategy &amp; Advisory",
     aboutTitle: "About",
     aboutLead:
       "I help health systems and health-tech companies adopt AI and digital health technologies, and use clinical and operational data to find bottlenecks and turn analytics into decisions. I advise on AI/ML implementation, interoperability (OMOP, FHIR, HL7), and putting new tools to work in clinical settings.",
@@ -20,7 +20,7 @@ const translations = {
     experienceTitle: "Professional Experience",
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
-    roleOneFact: "Chief Digital Officer",
+    roleOneFact: "Head of Product",
     roleDuke: "Fellow, Design Health Program",
     roleVerona: "Registered Nurse",
     descHackensack:
@@ -49,8 +49,8 @@ const translations = {
     navExperience: "esperienza",
     navPublications: "pubblicazioni",
     navEmail: "email",
-    heroTitle: "Faccio fluire i dati clinici e funzionare l'IA nei contesti di cura reali",
-    heroFocus: "Informatica clinica<br />IA sanitaria<br />Venture Health Tech",
+    heroTitle: "Faccio scorrere i dati clinici e funzionare l'IA dove avviene la cura",
+    heroFocus: "Informatica clinica<br />IA sanitaria<br />Strategia e consulenza",
     aboutTitle: "Profilo",
     aboutLead:
       "Aiuto sistemi sanitari e aziende health-tech ad adottare l'IA e le tecnologie di sanità digitale, e a usare i dati clinici e operativi per individuare i colli di bottiglia e trasformare le analisi in decisioni. Offro consulenza su implementazione di IA/ML, interoperabilità (OMOP, FHIR, HL7) e introduzione di nuovi strumenti nei contesti clinici.",
@@ -65,7 +65,7 @@ const translations = {
     experienceTitle: "Esperienza professionale",
     roleHackensack: "Ingegnere di informatica clinica",
     roleColumbia: "Senior Informatics Specialist",
-    roleOneFact: "Chief Digital Officer",
+    roleOneFact: "Head of Product",
     roleDuke: "Fellow, Design Health Program",
     roleVerona: "Infermiere",
     descHackensack:
@@ -94,8 +94,8 @@ const translations = {
     navExperience: "expérience",
     navPublications: "publications",
     navEmail: "email",
-    heroTitle: "Je fais circuler les données cliniques et fonctionner l'IA dans les vrais lieux de soins",
-    heroFocus: "Informatique clinique<br />IA en santé<br />Venture Health Tech",
+    heroTitle: "Je fais circuler les données cliniques et fonctionner l'IA là où se font les soins",
+    heroFocus: "Informatique clinique<br />IA en santé<br />Stratégie et conseil",
     aboutTitle: "Profil",
     aboutLead:
       "J'aide les systèmes de santé et les entreprises de la health tech à adopter l'IA et les technologies de santé numérique, et à utiliser les données cliniques et opérationnelles pour repérer les goulots d'étranglement et transformer l'analyse en décisions. Je conseille sur la mise en œuvre de l'IA/ML, l'interopérabilité (OMOP, FHIR, HL7) et l'intégration de nouveaux outils en milieu clinique.",
@@ -110,7 +110,7 @@ const translations = {
     experienceTitle: "Expérience professionnelle",
     roleHackensack: "Ingénieur en informatique clinique",
     roleColumbia: "Spécialiste senior en informatique",
-    roleOneFact: "Chief Digital Officer",
+    roleOneFact: "Responsable produit",
     roleDuke: "Fellow, Design Health Program",
     roleVerona: "Infirmier diplômé",
     descHackensack:
@@ -139,8 +139,8 @@ const translations = {
     navExperience: "erfahrung",
     navPublications: "publikationen",
     navEmail: "email",
-    heroTitle: "Ich bringe klinische Daten in Fluss und KI in der echten Versorgung zum Laufen",
-    heroFocus: "Klinische Informatik<br />Healthcare AI<br />Venture Health Tech",
+    heroTitle: "Ich bringe klinische Daten in Fluss und KI dort zum Laufen, wo Versorgung stattfindet",
+    heroFocus: "Klinische Informatik<br />Healthcare AI<br />Strategie &amp; Beratung",
     aboutTitle: "Profil",
     aboutLead:
       "Ich unterstütze Gesundheitssysteme und Health-Tech-Unternehmen dabei, KI und digitale Gesundheitstechnologien einzuführen und klinische und operative Daten zu nutzen, um Engpässe zu finden und Analysen in Entscheidungen zu übersetzen. Ich berate zur Implementierung von KI/ML, zur Interoperabilität (OMOP, FHIR, HL7) und zum Einsatz neuer Werkzeuge im klinischen Alltag.",
@@ -155,7 +155,7 @@ const translations = {
     experienceTitle: "Berufserfahrung",
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
-    roleOneFact: "Chief Digital Officer",
+    roleOneFact: "Head of Product",
     roleDuke: "Fellow, Design Health Program",
     roleVerona: "Examinierter Krankenpfleger",
     descHackensack:
@@ -184,8 +184,8 @@ const translations = {
     navExperience: "experiencia",
     navPublications: "publicaciones",
     navEmail: "email",
-    heroTitle: "Hago que los datos clínicos fluyan y que la IA funcione en entornos de atención reales",
-    heroFocus: "Informática clínica<br />IA en salud<br />Venture Health Tech",
+    heroTitle: "Hago que los datos clínicos fluyan y que la IA funcione donde ocurre la atención",
+    heroFocus: "Informática clínica<br />IA en salud<br />Estrategia y asesoría",
     aboutTitle: "Perfil",
     aboutLead:
       "Ayudo a sistemas de salud y empresas de tecnología sanitaria a adoptar la IA y las tecnologías de salud digital, y a usar datos clínicos y operativos para detectar cuellos de botella y convertir la analítica en decisiones. Asesoro en la implementación de IA/ML, la interoperabilidad (OMOP, FHIR, HL7) y la puesta en marcha de nuevas herramientas en entornos clínicos.",
@@ -200,7 +200,7 @@ const translations = {
     experienceTitle: "Experiencia profesional",
     roleHackensack: "Ingeniero de informática clínica",
     roleColumbia: "Especialista senior en informática",
-    roleOneFact: "Chief Digital Officer",
+    roleOneFact: "Responsable de producto",
     roleDuke: "Fellow, Design Health Program",
     roleVerona: "Enfermero registrado",
     descHackensack:
@@ -229,8 +229,8 @@ const translations = {
     navExperience: "경력",
     navPublications: "출판물",
     navEmail: "이메일",
-    heroTitle: "임상 데이터가 흐르고 AI가 실제 진료 현장에서 작동하도록 만듭니다",
-    heroFocus: "임상 정보학<br />헬스케어 AI<br />벤처 헬스테크",
+    heroTitle: "진료가 이루어지는 곳에서 임상 데이터가 흐르고 AI가 작동하도록 만듭니다",
+    heroFocus: "임상 정보학<br />헬스케어 AI<br />전략 및 자문",
     aboutTitle: "소개",
     aboutLead:
       "저는 의료 시스템과 헬스테크 기업이 AI와 디지털 헬스 기술을 도입하고, 임상 및 운영 데이터를 활용해 병목을 찾아 분석을 의사결정으로 연결하도록 돕습니다. AI/ML 도입, 상호운용성(OMOP, FHIR, HL7), 그리고 새로운 도구를 임상 현장에 적용하는 일에 대해 자문합니다.",
@@ -245,7 +245,7 @@ const translations = {
     experienceTitle: "전문 경력",
     roleHackensack: "임상 정보학 엔지니어",
     roleColumbia: "시니어 정보학 스페셜리스트",
-    roleOneFact: "최고 디지털 책임자",
+    roleOneFact: "제품 총괄",
     roleDuke: "Design Health Program 펠로우",
     roleVerona: "등록 간호사",
     descHackensack:
@@ -274,8 +274,8 @@ const translations = {
     navExperience: "经历",
     navPublications: "出版物",
     navEmail: "邮箱",
-    heroTitle: "我让临床数据顺畅流动，让 AI 在真实的医疗场景中发挥作用",
-    heroFocus: "临床信息学<br />医疗 AI<br />医疗科技创业",
+    heroTitle: "我让临床数据在医疗发生的地方顺畅流动，让 AI 真正发挥作用",
+    heroFocus: "临床信息学<br />医疗 AI<br />战略与咨询",
     aboutTitle: "简介",
     aboutLead:
       "我帮助医疗系统和医疗科技公司采用 AI 与数字健康技术，并利用临床和运营数据找出瓶颈，将分析转化为决策。我就 AI/ML 落地、互操作性（OMOP、FHIR、HL7）以及在临床环境中应用新工具提供咨询。",
@@ -290,7 +290,7 @@ const translations = {
     experienceTitle: "专业经历",
     roleHackensack: "临床信息学工程师",
     roleColumbia: "高级信息学专家",
-    roleOneFact: "首席数字官",
+    roleOneFact: "产品负责人",
     roleDuke: "Design Health Program 研究员",
     roleVerona: "注册护士",
     descHackensack:
@@ -319,8 +319,8 @@ const translations = {
     navExperience: "経歴",
     navPublications: "出版物",
     navEmail: "メール",
-    heroTitle: "臨床データを流れるようにし、AIを実際の医療現場で機能させます",
-    heroFocus: "臨床情報学<br />ヘルスケアAI<br />ベンチャーヘルステック",
+    heroTitle: "医療の現場で臨床データを流れるようにし、AIを機能させます",
+    heroFocus: "臨床情報学<br />ヘルスケアAI<br />戦略とアドバイザリー",
     aboutTitle: "紹介",
     aboutLead:
       "私は、医療機関やヘルステック企業がAIやデジタルヘルス技術を導入し、臨床・運営データを活用してボトルネックを見つけ、分析を意思決定につなげられるよう支援しています。AI/MLの実装、相互運用性（OMOP、FHIR、HL7）、そして新しいツールを臨床現場で活用することについて助言しています。",
@@ -335,7 +335,7 @@ const translations = {
     experienceTitle: "職務経歴",
     roleHackensack: "臨床情報学エンジニア",
     roleColumbia: "シニア情報学スペシャリスト",
-    roleOneFact: "最高デジタル責任者",
+    roleOneFact: "プロダクト責任者",
     roleDuke: "Design Health Program フェロー",
     roleVerona: "登録看護師",
     descHackensack:

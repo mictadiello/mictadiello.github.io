@@ -4,7 +4,7 @@ import Base from "../layouts/Base.astro";
 const roles = [
   { org: "Hackensack University Medical Center", key: "roleHackensack", role: "Clinical Informatics Engineer" },
   { org: "Columbia University Irving Medical Center", key: "roleColumbia", role: "Senior Informatics Specialist" },
-  { org: "One Fact Foundation", key: "roleOneFact", role: "Chief Digital Officer" },
+  { org: "One Fact Foundation", key: "roleOneFact", role: "Head of Product" },
   { org: "Duke University", key: "roleDuke", role: "Fellow, Design Health Program" },
   { org: "University Hospital of Verona", key: "roleVerona", role: "Registered Nurse" },
 ];
@@ -16,10 +16,26 @@ const roles = [
     {
       roles.map(({ org, key, role }) => (
         <li>
-          <h2>{org}</h2>
-          <p data-i18n={key}>{role}</p>
+          <h2 data-i18n={key}>{role}</h2>
+          <p>{org}</p>
         </li>
       ))
     }
   </ul>
+  <div class="prose">
+    <h2 data-i18n="stackTitle">Stack</h2>
+    <p data-i18n-html="stackInformatics">
+      <strong>Informatics &amp; AI/ML:</strong> NLP/LLM systems, predictive modeling, RAG architecture,
+      clinical analytics, EHR data (Epic Clarity), FHIR/HL7, OMOP CDM.
+    </p>
+    <p data-i18n-html="stackData">
+      <strong>Data:</strong> SQL, MySQL, BigQuery, Dataform, Dataplex, Looker Studio.
+    </p>
+    <p data-i18n-html="stackEngineering">
+      <strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.
+    </p>
+    <p data-i18n-html="stackCloud">
+      <strong>Cloud/Product:</strong> AWS, Azure, Google Cloud, Jira, Figma.
+    </p>
+  </div>
 </Base>
