@@ -96,6 +96,7 @@ a {
 
 .site-header .site-name {
   padding-left: 0;
+  font-weight: 700;
 }
 
 .site-header .site-name:hover {
