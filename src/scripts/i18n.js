@@ -15,8 +15,7 @@ const translations = {
       "In previous lives I was a nurse, a business partner in a home care delivery clinic, and later worked at a university medical center during the Covid pandemic.",
     aboutEducation:
       "I hold a Master of Management in Clinical Informatics from Duke University School of Medicine, with a certificate in Innovation and Entrepreneurship, and a Bachelor of Nursing from the University of Verona.",
-    aboutPersonal:
-      "I’m Italian, and outside of work I love football, books, and jazz. I’m also a geek for ancient Japanese and Korean architecture, a passion that comes from my technical high school diploma in civil engineering technology and architecture.",
+    aboutPersonal: "I’m Italian, and outside of work I love football, reading books, and listening to music including jazz. I’m also a geek for ancient Japanese and Korean architecture, a passion that comes from my high school diploma in civil engineering and architecture.",
     experienceTitle: "Professional Experience",
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
@@ -68,8 +67,7 @@ const translations = {
       "In vite precedenti sono stato infermiere e socio di un ambulatorio di assistenza domiciliare, e in seguito ho lavorato in un centro medico universitario durante la pandemia di Covid.",
     aboutEducation:
       "Ho conseguito un Master of Management in Clinical Informatics presso la Duke University School of Medicine, con un certificato in Innovation and Entrepreneurship, e una laurea in Infermieristica presso l'Università di Verona.",
-    aboutPersonal:
-      "Sono italiano e, fuori dal lavoro, amo il calcio, i libri e il jazz. Sono anche un appassionato di architettura antica giapponese e coreana, una passione che nasce dal mio diploma di geometra.",
+    aboutPersonal: "Sono italiano e, fuori dal lavoro, amo il calcio, leggere libri e ascoltare musica, jazz compreso. Sono anche un appassionato di architettura antica giapponese e coreana, una passione che nasce dal mio diploma di geometra.",
     experienceTitle: "Esperienza professionale",
     roleHackensack: "Ingegnere di informatica clinica",
     roleColumbia: "Senior Informatics Specialist",
@@ -121,8 +119,7 @@ const translations = {
       "Dans des vies antérieures, j'ai été infirmier et associé d'une clinique de soins à domicile, puis j'ai travaillé dans un centre médical universitaire pendant la pandémie de Covid.",
     aboutEducation:
       "Je suis titulaire d'un Master of Management in Clinical Informatics de la Duke University School of Medicine, avec un certificat en innovation et entrepreneuriat, et d'une licence en sciences infirmières de l'Université de Vérone.",
-    aboutPersonal:
-      "Je suis italien et, en dehors du travail, j'aime le football, les livres et le jazz. Je suis aussi passionné d'architecture ancienne japonaise et coréenne, une passion qui vient de mon baccalauréat technique en génie civil et architecture.",
+    aboutPersonal: "Je suis italien et, en dehors du travail, j'aime le football, lire des livres et écouter de la musique, dont le jazz. Je suis aussi passionné d'architecture ancienne japonaise et coréenne, une passion qui vient de mon diplôme de lycée en génie civil et architecture.",
     experienceTitle: "Expérience professionnelle",
     roleHackensack: "Ingénieur en informatique clinique",
     roleColumbia: "Spécialiste senior en informatique",
@@ -174,8 +171,7 @@ const translations = {
       "In früheren Leben war ich Krankenpfleger und Geschäftspartner einer Klinik für häusliche Pflege und arbeitete später während der Covid-Pandemie an einem Universitätsklinikum.",
     aboutEducation:
       "Ich habe einen Master of Management in Clinical Informatics der Duke University School of Medicine mit einem Zertifikat in Innovation and Entrepreneurship sowie einen Bachelor in Pflege der Universität Verona.",
-    aboutPersonal:
-      "Ich bin Italiener und liebe außerhalb der Arbeit Fußball, Bücher und Jazz. Außerdem begeistere ich mich für alte japanische und koreanische Architektur – eine Leidenschaft, die aus meinem Abschluss an einer technischen Oberschule für Bautechnik und Architektur stammt.",
+    aboutPersonal: "Ich bin Italiener und liebe außerhalb der Arbeit Fußball, Bücher lesen und Musik hören, darunter Jazz. Außerdem begeistere ich mich für alte japanische und koreanische Architektur – eine Leidenschaft, die aus meinem Schulabschluss in Bauingenieurwesen und Architektur stammt.",
     experienceTitle: "Berufserfahrung",
     roleHackensack: "Clinical Informatics Engineer",
     roleColumbia: "Senior Informatics Specialist",
@@ -227,8 +223,7 @@ const translations = {
       "En vidas anteriores fui enfermero y socio de una clínica de atención domiciliaria, y más tarde trabajé en un centro médico universitario durante la pandemia de Covid.",
     aboutEducation:
       "Tengo un Master of Management in Clinical Informatics de Duke University School of Medicine, con un certificado en Innovación y Emprendimiento, y una licenciatura en Enfermería de la Universidad de Verona.",
-    aboutPersonal:
-      "Soy italiano y, fuera del trabajo, me encantan el fútbol, los libros y el jazz. También soy un apasionado de la arquitectura antigua japonesa y coreana, una pasión que viene de mi bachillerato técnico en construcción civil y arquitectura.",
+    aboutPersonal: "Soy italiano y, fuera del trabajo, me encantan el fútbol, leer libros y escuchar música, incluido el jazz. También soy un apasionado de la arquitectura antigua japonesa y coreana, una pasión que viene de mi bachillerato en ingeniería civil y arquitectura.",
     experienceTitle: "Experiencia profesional",
     roleHackensack: "Ingeniero de informática clínica",
     roleColumbia: "Especialista senior en informática",
@@ -280,8 +275,7 @@ const translations = {
       "이전에는 간호사였고 가정 간호 클리닉의 사업 파트너였으며, 이후 코로나19 팬데믹 기간에 대학 의료센터에서 일했습니다.",
     aboutEducation:
       "Duke University School of Medicine에서 혁신 및 창업 수료증과 함께 Clinical Informatics 경영학 석사(Master of Management) 학위를, University of Verona에서 간호학 학사 학위를 받았습니다.",
-    aboutPersonal:
-      "저는 이탈리아인이며, 일 밖에서는 축구, 책, 재즈를 좋아합니다. 또한 고대 일본과 한국 건축에 푹 빠져 있는데, 이 열정은 토목·건축 기술을 공부한 기술고등학교 시절에서 비롯되었습니다.",
+    aboutPersonal: "저는 이탈리아인이며, 일 밖에서는 축구, 독서, 그리고 재즈를 포함한 음악 감상을 좋아합니다. 또한 고대 일본과 한국 건축에 푹 빠져 있는데, 이 열정은 토목공학과 건축을 공부한 고등학교 시절에서 비롯되었습니다.",
     experienceTitle: "전문 경력",
     roleHackensack: "임상 정보학 엔지니어",
     roleColumbia: "시니어 정보학 스페셜리스트",
@@ -333,8 +327,7 @@ const translations = {
       "在过去的经历中，我曾是一名护士，也曾是一家居家护理诊所的合伙人，后来在新冠疫情期间于一家大学医学中心工作。",
     aboutEducation:
       "我拥有 Duke University School of Medicine 的临床信息学管理硕士学位（Master of Management in Clinical Informatics）及创新与创业证书，并拥有 University of Verona 的护理学学士学位。",
-    aboutPersonal:
-      "我是意大利人，工作之余热爱足球、读书和爵士乐。我还痴迷于古代日本和韩国建筑，这份热情源自我在技术高中学习土木工程技术与建筑的经历。",
+    aboutPersonal: "我是意大利人，工作之余热爱足球、读书和听音乐，尤其是爵士乐。我还痴迷于古代日本和韩国建筑，这份热情源自我在高中学习土木工程与建筑的经历。",
     experienceTitle: "专业经历",
     roleHackensack: "临床信息学工程师",
     roleColumbia: "高级信息学专家",
@@ -386,8 +379,7 @@ const translations = {
       "以前は看護師として働き、在宅ケアクリニックの共同経営者を務め、その後コロナ禍の大学医療センターで勤務しました。",
     aboutEducation:
       "Duke University School of MedicineでClinical InformaticsのMaster of Management（イノベーションと起業の修了証付き）を、University of Veronaで看護学の学士号を取得しています。",
-    aboutPersonal:
-      "私はイタリア出身で、仕事以外ではサッカー、読書、ジャズが大好きです。また、日本と韓国の古建築にも夢中で、その情熱は土木・建築技術を学んだ技術高校に由来しています。",
+    aboutPersonal: "私はイタリア出身で、仕事以外ではサッカー、読書、そしてジャズをはじめとする音楽鑑賞が大好きです。また、日本と韓国の古建築にも夢中で、その情熱は土木工学と建築を学んだ高校時代に由来しています。",
     experienceTitle: "職務経歴",
     roleHackensack: "臨床情報学エンジニア",
     roleColumbia: "シニア情報学スペシャリスト",
