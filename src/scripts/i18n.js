@@ -43,7 +43,6 @@ const translations = {
     stackEngineering:
       "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Product:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
-    contactTitle: "Contact"
   },
   it: {
     navAbout: "profilo",
@@ -89,7 +88,6 @@ const translations = {
     stackEngineering:
       "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Prodotto:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
-    contactTitle: "Contatti"
   },
   fr: {
     navAbout: "profil",
@@ -135,7 +133,6 @@ const translations = {
     stackEngineering:
       "<strong>Ingénierie :</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Produit :</strong> AWS, Azure, Google Cloud, Jira, Figma.",
-    contactTitle: "Contact"
   },
   de: {
     navAbout: "profil",
@@ -181,7 +178,6 @@ const translations = {
     stackEngineering:
       "<strong>Engineering:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Produkt:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
-    contactTitle: "Kontakt"
   },
   es: {
     navAbout: "perfil",
@@ -227,7 +223,6 @@ const translations = {
     stackEngineering:
       "<strong>Ingeniería:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>Cloud/Producto:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
-    contactTitle: "Contacto"
   },
   ko: {
     navAbout: "소개",
@@ -273,7 +268,6 @@ const translations = {
     stackEngineering:
       "<strong>엔지니어링:</strong> Python, PyTorch, TensorFlow, Hugging Face, LangChain, Docker, GitHub.",
     stackCloud: "<strong>클라우드/제품:</strong> AWS, Azure, Google Cloud, Jira, Figma.",
-    contactTitle: "연락처"
   },
   zh: {
     navAbout: "简介",
@@ -319,7 +313,6 @@ const translations = {
     stackEngineering:
       "<strong>工程:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、Docker、GitHub。",
     stackCloud: "<strong>云/产品:</strong> AWS、Azure、Google Cloud、Jira、Figma。",
-    contactTitle: "联系方式"
   },
   ja: {
     navAbout: "紹介",
@@ -365,7 +358,6 @@ const translations = {
     stackEngineering:
       "<strong>エンジニアリング:</strong> Python、PyTorch、TensorFlow、Hugging Face、LangChain、Docker、GitHub。",
     stackCloud: "<strong>クラウド/プロダクト:</strong> AWS、Azure、Google Cloud、Jira、Figma。",
-    contactTitle: "連絡先"
   }
 };
 

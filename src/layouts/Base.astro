@@ -40,7 +40,10 @@ const nav = [
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="site-name" href="/">Michele Tadiello</a>
-      <nav class="site-nav" aria-label="Main navigation">
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         {
           nav.map(({ href, key, label }) => (
             <a href={href} data-i18n={key} aria-current={path === href ? "page" : undefined}>
@@ -48,22 +51,31 @@ const nav = [
             </a>
           ))
         }
-        <select id="language-select" class="language-select" aria-label="Language">
-          <option value="en">English</option>
-          <option value="it">Italiano</option>
-          <option value="fr">Français</option>
-          <option value="de">Deutsch</option>
-          <option value="es">Español</option>
-          <option value="ko">한국어</option>
-          <option value="zh">中文</option>
-          <option value="ja">日本語</option>
-        </select>
+        <a class="nav-btn" href="mailto:mictadiello@gmail.com" data-i18n="navEmail">email</a>
       </nav>
     </header>
     <main id="main">
       <slot />
     </main>
-    <footer class="site-footer">© <span id="year">{new Date().getFullYear()}</span> Michele Tadiello</footer>
+    <footer class="site-footer">
+      <span>© <span id="year">{new Date().getFullYear()}</span> Michele Tadiello</span>
+      <select id="language-select" class="language-select" aria-label="Language">
+        <option value="en">English</option>
+        <option value="it">Italiano</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="ko">한국어</option>
+        <option value="zh">中文</option>
+        <option value="ja">日本語</option>
+      </select>
+    </footer>
+    <script>
+      const btn = document.querySelector(".menu-btn");
+      btn.addEventListener("click", () =>
+        btn.setAttribute("aria-expanded", String(btn.getAttribute("aria-expanded") !== "true")),
+      );
+    </script>
     <script src="../scripts/i18n.js"></script>
   </body>
 </html>
