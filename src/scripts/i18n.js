@@ -14,8 +14,6 @@ const translations = {
     aboutTitle: "About",
     aboutLead:
       "I help health systems and health-tech companies adopt AI and digital health technologies, and use clinical and operational data to find bottlenecks and turn analytics into decisions. I advise on AI/ML implementation, interoperability (OMOP, FHIR, HL7), and putting new tools to work in clinical settings.",
-    aboutColumbia:
-      "At Columbia University Medical Center, I developed an AI teaching assistant for nursing students and architected a hybrid computational infrastructure that supports researchers’ computational work, including work with large language models.",
     aboutPast:
       "In previous lives I was a nurse, a business partner in a home care delivery clinic, and later worked at a university medical center during the Covid pandemic.",
     aboutEducation:
@@ -66,8 +64,6 @@ const translations = {
     aboutTitle: "Profilo",
     aboutLead:
       "Aiuto sistemi sanitari e aziende health-tech ad adottare l'IA e le tecnologie di sanità digitale, e a usare i dati clinici e operativi per individuare i colli di bottiglia e trasformare le analisi in decisioni. Offro consulenza su implementazione di IA/ML, interoperabilità (OMOP, FHIR, HL7) e introduzione di nuovi strumenti nei contesti clinici.",
-    aboutColumbia:
-      "Al Columbia University Medical Center ho sviluppato un assistente didattico basato sull'IA per gli studenti di infermieristica e ho progettato un'infrastruttura computazionale ibrida che supporta il lavoro computazionale dei ricercatori, compreso quello con i modelli linguistici di grandi dimensioni.",
     aboutPast:
       "In vite precedenti sono stato infermiere e socio di un ambulatorio di assistenza domiciliare, e in seguito ho lavorato in un centro medico universitario durante la pandemia di Covid.",
     aboutEducation:
@@ -118,8 +114,6 @@ const translations = {
     aboutTitle: "Profil",
     aboutLead:
       "J'aide les systèmes de santé et les entreprises de la health tech à adopter l'IA et les technologies de santé numérique, et à utiliser les données cliniques et opérationnelles pour repérer les goulots d'étranglement et transformer l'analyse en décisions. Je conseille sur la mise en œuvre de l'IA/ML, l'interopérabilité (OMOP, FHIR, HL7) et l'intégration de nouveaux outils en milieu clinique.",
-    aboutColumbia:
-      "Au Columbia University Medical Center, j'ai développé un assistant pédagogique fondé sur l'IA pour les étudiants en soins infirmiers et conçu une infrastructure de calcul hybride qui soutient le travail computationnel des chercheurs, y compris avec de grands modèles de langage.",
     aboutPast:
       "Dans des vies antérieures, j'ai été infirmier et associé d'une clinique de soins à domicile, puis j'ai travaillé dans un centre médical universitaire pendant la pandémie de Covid.",
     aboutEducation:
@@ -170,8 +164,6 @@ const translations = {
     aboutTitle: "Profil",
     aboutLead:
       "Ich unterstütze Gesundheitssysteme und Health-Tech-Unternehmen dabei, KI und digitale Gesundheitstechnologien einzuführen und klinische und operative Daten zu nutzen, um Engpässe zu finden und Analysen in Entscheidungen zu übersetzen. Ich berate zur Implementierung von KI/ML, zur Interoperabilität (OMOP, FHIR, HL7) und zum Einsatz neuer Werkzeuge im klinischen Alltag.",
-    aboutColumbia:
-      "Am Columbia University Medical Center habe ich einen KI-Lehrassistenten für Pflegestudierende entwickelt und eine hybride Recheninfrastruktur konzipiert, die die rechenintensive Arbeit von Forschenden unterstützt, auch mit großen Sprachmodellen.",
     aboutPast:
       "In früheren Leben war ich Krankenpfleger und Geschäftspartner einer Klinik für häusliche Pflege und arbeitete später während der Covid-Pandemie an einem Universitätsklinikum.",
     aboutEducation:
@@ -222,8 +214,6 @@ const translations = {
     aboutTitle: "Perfil",
     aboutLead:
       "Ayudo a sistemas de salud y empresas de tecnología sanitaria a adoptar la IA y las tecnologías de salud digital, y a usar datos clínicos y operativos para detectar cuellos de botella y convertir la analítica en decisiones. Asesoro en la implementación de IA/ML, la interoperabilidad (OMOP, FHIR, HL7) y la puesta en marcha de nuevas herramientas en entornos clínicos.",
-    aboutColumbia:
-      "En el Columbia University Medical Center desarrollé un asistente docente basado en IA para estudiantes de enfermería y diseñé una infraestructura computacional híbrida que apoya el trabajo computacional de los investigadores, incluido el trabajo con grandes modelos de lenguaje.",
     aboutPast:
       "En vidas anteriores fui enfermero y socio de una clínica de atención domiciliaria, y más tarde trabajé en un centro médico universitario durante la pandemia de Covid.",
     aboutEducation:
@@ -274,8 +264,6 @@ const translations = {
     aboutTitle: "소개",
     aboutLead:
       "저는 의료 시스템과 헬스테크 기업이 AI와 디지털 헬스 기술을 도입하고, 임상 및 운영 데이터를 활용해 병목을 찾아 분석을 의사결정으로 연결하도록 돕습니다. AI/ML 도입, 상호운용성(OMOP, FHIR, HL7), 그리고 새로운 도구를 임상 현장에 적용하는 일에 대해 자문합니다.",
-    aboutColumbia:
-      "Columbia University Medical Center에서 간호학생을 위한 AI 교육 보조 도구를 개발했고, 대규모 언어 모델 작업을 포함해 연구자들의 계산 작업을 지원하는 하이브리드 컴퓨팅 인프라를 설계했습니다.",
     aboutPast:
       "이전에는 간호사였고 가정 간호 클리닉의 사업 파트너였으며, 이후 코로나19 팬데믹 기간에 대학 의료센터에서 일했습니다.",
     aboutEducation:
@@ -326,8 +314,6 @@ const translations = {
     aboutTitle: "简介",
     aboutLead:
       "我帮助医疗系统和医疗科技公司采用 AI 与数字健康技术，并利用临床和运营数据找出瓶颈，将分析转化为决策。我就 AI/ML 落地、互操作性（OMOP、FHIR、HL7）以及在临床环境中应用新工具提供咨询。",
-    aboutColumbia:
-      "在 Columbia University Medical Center，我为护理学生开发了一个 AI 教学助手，并设计了一套混合计算基础设施，支持研究人员的计算工作，包括大语言模型相关工作。",
     aboutPast:
       "在过去的经历中，我曾是一名护士，也曾是一家居家护理诊所的合伙人，后来在新冠疫情期间于一家大学医学中心工作。",
     aboutEducation:
@@ -378,8 +364,6 @@ const translations = {
     aboutTitle: "紹介",
     aboutLead:
       "私は、医療機関やヘルステック企業がAIやデジタルヘルス技術を導入し、臨床・運営データを活用してボトルネックを見つけ、分析を意思決定につなげられるよう支援しています。AI/MLの実装、相互運用性（OMOP、FHIR、HL7）、そして新しいツールを臨床現場で活用することについて助言しています。",
-    aboutColumbia:
-      "Columbia University Medical Centerでは、看護学生向けのAI教育アシスタントを開発し、大規模言語モデルを用いた作業を含む研究者の計算業務を支えるハイブリッドな計算インフラを設計しました。",
     aboutPast:
       "以前は看護師として働き、在宅ケアクリニックの共同経営者を務め、その後コロナ禍の大学医療センターで勤務しました。",
     aboutEducation:
