@@ -46,6 +46,7 @@ const translations = {
     projSonaice: "Hybrid computational infrastructure powered by NVIDIA GPUs for Columbia School of Nursing.",
     projLea: "AI teaching assistant for Columbia School of Nursing, running locally on desktop and mobile devices to enhance nursing education and technology literacy.",
     projMde: "A solution for increasing interoperability of health data between FHIR and OMOP through the creation of a Master Data Element (MDE) set.",
+    projQuality: "Developed an interactive tool to simplify hospital quality data, helping patients compare hospitals and make more informed healthcare decisions.",
     projHeartly: "Medical device prototypes focused on tracking pediatric patients with Hypoplastic Left Heart Syndrome (HLHS).",
     projWieny: "Dog walking app to promote health and wellbeing through mobility, tracking calories and distance with GPS."
   },
@@ -96,6 +97,7 @@ const translations = {
     projSonaice: "Infrastruttura computazionale ibrida basata su GPU NVIDIA per la Columbia School of Nursing.",
     projLea: "Assistente didattico di IA per la Columbia School of Nursing, eseguito in locale su desktop e dispositivi mobili, per migliorare la formazione infermieristica e l'alfabetizzazione tecnologica.",
     projMde: "Una soluzione per aumentare l'interoperabilità dei dati sanitari tra FHIR e OMOP attraverso la creazione di un set di Master Data Element (MDE).",
+    projQuality: "Ho sviluppato uno strumento interattivo che semplifica i dati sulla qualità ospedaliera, aiutando i pazienti a confrontare gli ospedali e a prendere decisioni sanitarie più consapevoli.",
     projHeartly: "Prototipi di dispositivi medici per il monitoraggio dei pazienti pediatrici con sindrome del cuore sinistro ipoplasico (HLHS).",
     projWieny: "App di dog walking che promuove salute e benessere attraverso il movimento, tracciando calorie e distanza con il GPS."
   },
@@ -146,6 +148,7 @@ const translations = {
     projSonaice: "Infrastructure de calcul hybride propulsée par des GPU NVIDIA pour la Columbia School of Nursing.",
     projLea: "Assistant pédagogique d'IA pour la Columbia School of Nursing, exécuté localement sur ordinateur et mobile, pour renforcer la formation infirmière et la culture technologique.",
     projMde: "Une solution pour améliorer l'interopérabilité des données de santé entre FHIR et OMOP grâce à la création d'un ensemble de Master Data Elements (MDE).",
+    projQuality: "Développement d'un outil interactif qui simplifie les données de qualité hospitalière, pour aider les patients à comparer les hôpitaux et à prendre des décisions de santé plus éclairées.",
     projHeartly: "Prototypes de dispositifs médicaux pour le suivi des patients pédiatriques atteints du syndrome d'hypoplasie du cœur gauche (HLHS).",
     projWieny: "Application de promenade de chiens qui favorise la santé et le bien-être par la mobilité, en suivant les calories et la distance par GPS."
   },
@@ -196,6 +199,7 @@ const translations = {
     projSonaice: "Hybride Recheninfrastruktur auf Basis von NVIDIA-GPUs für die Columbia School of Nursing.",
     projLea: "KI-Lehrassistent für die Columbia School of Nursing, der lokal auf Desktop- und Mobilgeräten läuft, um die Pflegeausbildung und die technologische Kompetenz zu stärken.",
     projMde: "Eine Lösung, die die Interoperabilität von Gesundheitsdaten zwischen FHIR und OMOP durch die Erstellung eines Master-Data-Element-Sets (MDE) verbessert.",
+    projQuality: "Entwicklung eines interaktiven Tools, das Qualitätsdaten von Krankenhäusern vereinfacht und Patienten hilft, Krankenhäuser zu vergleichen und fundiertere Gesundheitsentscheidungen zu treffen.",
     projHeartly: "Prototypen medizinischer Geräte zur Überwachung pädiatrischer Patienten mit hypoplastischem Linksherzsyndrom (HLHS).",
     projWieny: "Dog-Walking-App, die Gesundheit und Wohlbefinden durch Bewegung fördert und Kalorien sowie Strecke per GPS erfasst."
   },
@@ -246,6 +250,7 @@ const translations = {
     projSonaice: "Infraestructura computacional híbrida impulsada por GPU de NVIDIA para la Columbia School of Nursing.",
     projLea: "Asistente docente de IA para la Columbia School of Nursing, que funciona localmente en ordenadores y dispositivos móviles para mejorar la formación en enfermería y la alfabetización tecnológica.",
     projMde: "Una solución para aumentar la interoperabilidad de los datos de salud entre FHIR y OMOP mediante la creación de un conjunto de Master Data Elements (MDE).",
+    projQuality: "Desarrollé una herramienta interactiva que simplifica los datos de calidad hospitalaria y ayuda a los pacientes a comparar hospitales y tomar decisiones de salud más informadas.",
     projHeartly: "Prototipos de dispositivos médicos para el seguimiento de pacientes pediátricos con síndrome del corazón izquierdo hipoplásico (HLHS).",
     projWieny: "App para pasear perros que promueve la salud y el bienestar a través de la movilidad, registrando calorías y distancia con GPS."
   },
@@ -296,6 +301,7 @@ const translations = {
     projSonaice: "Columbia School of Nursing을 위한 NVIDIA GPU 기반의 하이브리드 컴퓨팅 인프라.",
     projLea: "Columbia School of Nursing을 위한 AI 교육 보조 도구로, 데스크톱과 모바일 기기에서 로컬로 실행되며 간호 교육과 기술 활용 능력을 높입니다.",
     projMde: "마스터 데이터 요소(MDE) 세트를 만들어 FHIR와 OMOP 간 의료 데이터의 상호운용성을 높이는 솔루션.",
+    projQuality: "병원 품질 데이터를 쉽게 이해할 수 있도록 하는 인터랙티브 도구를 개발하여, 환자가 병원을 비교하고 더 나은 의료 결정을 내릴 수 있도록 돕습니다.",
     projHeartly: "좌심형성부전증후군(HLHS) 소아 환자를 모니터링하기 위한 의료기기 프로토타입.",
     projWieny: "이동을 통해 건강과 웰빙을 증진하고, GPS로 칼로리와 거리를 기록하는 반려견 산책 앱."
   },
@@ -346,6 +352,7 @@ const translations = {
     projSonaice: "为 Columbia School of Nursing 打造、由 NVIDIA GPU 驱动的混合计算基础设施。",
     projLea: "为 Columbia School of Nursing 打造的 AI 教学助手，可在桌面和移动设备上本地运行，用于加强护理教育和技术素养。",
     projMde: "通过创建主数据元素（MDE）集，提升 FHIR 与 OMOP 之间健康数据互操作性的解决方案。",
+    projQuality: "开发了一款交互式工具，简化医院质量数据，帮助患者比较医院并做出更明智的医疗决策。",
     projHeartly: "用于监测左心发育不良综合征（HLHS）患儿的医疗设备原型。",
     projWieny: "一款遛狗应用，通过运动促进健康与福祉，并用 GPS 记录卡路里和距离。"
   },
@@ -396,6 +403,7 @@ const translations = {
     projSonaice: "Columbia School of Nursing向けの、NVIDIA GPUを搭載したハイブリッド計算インフラ。",
     projLea: "Columbia School of Nursing向けのAI教育アシスタントで、デスクトップやモバイル端末でローカルに動作し、看護教育とテクノロジーリテラシーの向上を目指します。",
     projMde: "マスターデータ要素（MDE）セットを作成し、FHIRとOMOP間の医療データの相互運用性を高めるソリューション。",
+    projQuality: "病院の品質データをわかりやすくするインタラクティブなツールを開発し、患者が病院を比較し、より納得のいく医療上の判断を下せるよう支援しています。",
     projHeartly: "左心低形成症候群（HLHS）の小児患者をモニタリングするための医療機器プロトタイプ。",
     projWieny: "運動を通じて健康とウェルビーイングを促進し、GPSでカロリーと距離を記録する犬の散歩アプリ。"
   }
