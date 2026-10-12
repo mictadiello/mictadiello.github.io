@@ -319,6 +319,16 @@ main:has(.home) {
   font-weight: 600;
 }
 
+/* Stack: bold white label, lighter muted list, so the label reads as the heading */
+.stack p {
+  font-weight: 350;
+  color: var(--muted);
+}
+
+.stack p strong {
+  color: var(--text);
+}
+
 .portrait {
   position: relative;
   float: right;
